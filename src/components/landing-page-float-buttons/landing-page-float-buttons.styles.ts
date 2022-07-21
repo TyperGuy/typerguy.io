@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled,{ keyframes } from 'styled-components';
+
 
 export const Container = styled.div`
   display: flex;
@@ -24,12 +25,26 @@ export const Circle = styled.div`
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
 
+
+const fadeIn = keyframes`
+ 0%{
+   opacity: 0;
+ }
+ 100%{
+  opacity: 1;
+ }
+`
+
 export const ContentContainer = styled.div`
   width: 376px;
   height: 722px;
   background-color: #fff;
   border-radius: 16px;
+  animation: ${fadeIn} .3s;
+  -webkit-animation: ${fadeIn} .3s;
+  -moz-animation: ${fadeIn} .3s;
+  -o-animation: ${fadeIn} .3s;
+  -ms-animation:${fadeIn} .3s;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 `;
-
 
