@@ -1,0 +1,16 @@
+{
+"buttons": {
+  "signin": "Entrar",
+  "signup":"Cadastrar-se"
+},
+"menu": [
+  {
+    "title":"FQA",
+    "id": "fqa"
+  },
+  {
+    "title":"Eventos",
+    "id": "eventos"
+  }
+]
+}
