@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import { Container ,Circle, ContentContainer} from './landing-page-float-buttons.styles'
+import { Container ,Circle, ContentContainer, Header, Body, Title, Schedule} from './landing-page-float-buttons.styles'
 import {DotsThreeOutline,X} from 'phosphor-react';
 
 export const FloatingButton: FC = () => {
@@ -14,7 +14,16 @@ export const FloatingButton: FC = () => {
     <Container>
       {isOpen&&
         <ContentContainer>
-
+          <Header/>
+          <Body>
+            <div>
+              <Title>Hi, there 👋</Title>
+              <div style={{color:'#fff',opacity:.5}}>Ask me anything, or send your feedback</div>
+            </div>
+            <Schedule>
+              
+            </Schedule>
+          </Body>
         </ContentContainer>}
       <Circle onClick={()=>setIsOpen(!isOpen)}>
       {

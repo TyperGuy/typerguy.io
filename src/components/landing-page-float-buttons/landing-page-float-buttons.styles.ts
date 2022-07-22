@@ -36,15 +36,50 @@ const fadeIn = keyframes`
 `
 
 export const ContentContainer = styled.div`
-  width: 376px;
-  height: 722px;
+  width: 380px;
+  height: 700px;
   background-color: #fff;
-  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
   animation: ${fadeIn} .3s;
-  -webkit-animation: ${fadeIn} .3s;
+  -webkit-animatio: ${fadeIn} .3s;
   -moz-animation: ${fadeIn} .3s;
   -o-animation: ${fadeIn} .3s;
   -ms-animation:${fadeIn} .3s;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  overflow:hidden;
 `;
+export const Header = styled.div`
+  width: 100%;
+  height: 250px;
+  background-image: -webkit-linear-gradient(135deg,rgb(38,50,56) 0%, rgb(0,0,0) 100%);
+  background-color: red;
+`;
+
+export const Body = styled.div`
+  width: 92%;
+  height: 550px;
+  margin: -200px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+`;
+
+export const Title = styled.div`
+  font-size: 1.8em;
+  color: white;
+`;
+
+export const Schedule = styled.div`
+  width: 100%;
+  height: 202px;
+  background-color: #fff;
+  border-radius: 3px;
+  border-top: solid 2px #6667ab;
+`;
+
+
+
 
