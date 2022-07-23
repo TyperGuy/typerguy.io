@@ -60,7 +60,7 @@ export const Header = styled.div`
 
 export const Body = styled.div`
   width: 92%;
-  height: 550px;
+  height: 650px;
   margin: -200px 10px;
   display: flex;
   flex-direction: column;
@@ -75,10 +75,77 @@ export const Title = styled.div`
 export const Schedule = styled.div`
   width: 100%;
   height: 202px;
+  box-sizing: border-box;
   background-color: #fff;
   border-radius: 3px;
   border-top: solid 2px #6667ab;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+  gap: 16px;
 `;
+export const FQA = styled.div`
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 3px;
+  border-top: solid 2px #6667ab;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+  gap: 16px;
+`;
+
+
+export const ScheduleBtn = styled.button`
+  width: 200px;
+  height: 40px;
+  background-color: #6667ab;
+  color: #fff;
+  font-size: .9em;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  &:hover{
+    background-color: #222;
+  }
+`;
+
+
+export const Question = styled.div`
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Row = styled.div`
+  width: 100%;
+  height: 40px;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  cursor: pointer;
+`;
+export const Answer = styled.div`
+  width: 90%;
+  height: 50px;
+  border-left: 2px solid rgba(0,0,0,.5);
+  color: rgba(0,0,0,.5);
+  padding-left: 5px;
+`;
+
+
 
 
 
