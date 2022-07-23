@@ -1,6 +1,6 @@
 import {FC, useState} from 'react';
 import dynamic from 'next/dynamic';
-import {Container, Content, Underlined,Image} from './Calltoaction.styles';
+import {Container, Content, Underlined,Image, Circle} from './Calltoaction.styles';
 import Button from '../../components/button';
 import PlayButton from '../../components/button/PlayButton';
 import { PlayCircle } from 'phosphor-react';
@@ -48,8 +48,10 @@ const Calltoaction: FC = () => {
               </Button>
               <PlayButton
                 onClick={setIsOpenVideo}>
-                <PlayCircle size={32} weight="fill" />
-                  QUERO SER
+                <Circle>
+                  <PlayCircle size={32} weight="fill" />
+                </Circle>
+                    QUERO SER
               </PlayButton>
             </div>
           </div>
