@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled,{keyframes} from 'styled-components';
 
 
 
@@ -39,9 +39,35 @@ export const Underlined = styled.strong`
     transform: rotate(-0.6deg);
   }
 `
+
+export const Pulse = keyframes`
+  0% {
+		box-shadow: 0 0 0 1px #6667ab;
+	}
+	40% {
+		box-shadow: 0 0 0 3px rgba(255, 26, 67, 0);
+	}
+	80% {
+		box-shadow: 0 0 0 6px rgba(255, 206, 67, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 10px rgba(255, 206, 67, 0);
+	}
+`;
+
 export const Image = styled.img`
   height: 400px;
 `
+export const Circle = styled.div`
+  display: grid;
+  place-items: center;
+  animation: ${Pulse} 2s infinite;
+  border-radius: 50%;
+`
+
+
+
+
 
 
 
