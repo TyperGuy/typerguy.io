@@ -1,9 +1,8 @@
 import '../assets/styles/style.global.scss';
 import type { AppProps } from 'next/app';
 import { PropsWithChildren } from 'react';
-import Header from 'components/header';
 import Footer from 'components/footer';
-import Modal from '../components/modals/cookies';
+import Modal from '../components/modals/location';
 
 interface CustomProps extends AppProps {
   pageProps: PropsWithChildren<unknown>;

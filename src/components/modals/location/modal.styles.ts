@@ -11,3 +11,8 @@ export const Container = styled.div`
   align-items: flex-end;
   justify-content: flex-start;
 `
+
+export const ChildContainer = styled.div`
+  transition: all 3s ease-in-out;
+`
+
