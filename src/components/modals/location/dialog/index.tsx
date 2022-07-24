@@ -7,7 +7,7 @@ const Dialog : React.FC <{setShowModal:(showModal:boolean) => void,setTargetModa
       <Content>
         <div style={{width:'80%',display:'flex',gap:10,alignItems:'center'}}>
            <img style={{height:'66px', width:'65px'}} src="/location.png"/>
-           <Title>Usamos Cookies</Title>
+           <Title>Can you helpe me?</Title>
         </div>
         <Description>
           I care a lot about your privacy, and i would like to know your location for study purposes.
