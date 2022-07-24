@@ -41,17 +41,11 @@ export const Underlined = styled.strong`
 `
 
 export const Pulse = keyframes`
-  0% {
-		box-shadow: 0 0 0 1px #6667ab;
-	}
-	40% {
-		box-shadow: 0 0 0 3px rgba(255, 26, 67, 0);
-	}
-	80% {
-		box-shadow: 0 0 0 6px rgba(255, 206, 67, 0);
+	0% {
+		box-shadow: 0 0 0  #6667ab;
 	}
 	100% {
-		box-shadow: 0 0 0 10px rgba(255, 206, 67, 0);
+		box-shadow: 0 0 40px 10px rgba(255, 206, 67, 0);
 	}
 `;
 
@@ -61,8 +55,9 @@ export const Image = styled.img`
 export const Circle = styled.div`
   display: grid;
   place-items: center;
-  animation: ${Pulse} 2s infinite;
   border-radius: 50%;
+  animation: ${Pulse} 2s infinite;
+
 `
 
 

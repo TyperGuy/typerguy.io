@@ -1,6 +1,37 @@
 import styled,{ keyframes } from 'styled-components';
 
 
+
+export const TurnBig = keyframes`
+ 0%{
+  height: 230px;
+ }
+ 100%{
+  height: 250px;
+ }
+`;
+
+
+export const SlideUp = keyframes`
+ 0%{
+  
+ }
+ 100%{
+  
+ }
+`;
+
+const FadeIn = keyframes`
+ 0%{
+   visibility: hidden;
+   transform: scale(.9);
+ }
+ 25%{
+  visibility: visible;
+  transform: scale(1);
+ }`
+ ;
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -9,6 +40,9 @@ export const Container = styled.div`
   z-index: 20000;
   right: 20px;
   bottom: 20px;
+`;
+
+export const Div = styled.div`
 `;
 
 export const Circle = styled.div`
@@ -45,9 +79,6 @@ export const ContentContainer = styled.div`
   border-radius: 12px;
   animation: ${fadeIn} .3s;
   -webkit-animatio: ${fadeIn} .3s;
-  -moz-animation: ${fadeIn} .3s;
-  -o-animation: ${fadeIn} .3s;
-  -ms-animation:${fadeIn} .3s;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   overflow:hidden;
 `;
@@ -55,7 +86,7 @@ export const Header = styled.div`
   width: 100%;
   height: 250px;
   background-image: -webkit-linear-gradient(135deg,rgb(38,50,56) 0%, rgb(0,0,0) 100%);
-  background-color: red;
+  animation: ${TurnBig} .3s;
 `;
 
 export const Body = styled.div`
@@ -85,6 +116,7 @@ export const Schedule = styled.div`
   justify-content: center;
   padding-left: 16px;
   gap: 16px;
+  animation: ${FadeIn} 1s;
 `;
 export const FQA = styled.div`
   width: 100%;
@@ -99,6 +131,7 @@ export const FQA = styled.div`
   justify-content: center;
   padding-left: 16px;
   gap: 16px;
+  animation: ${FadeIn} 1s;
 `;
 
 

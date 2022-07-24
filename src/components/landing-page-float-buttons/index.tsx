@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import { Container ,Circle, ContentContainer, Header, Body, Title, Schedule,ScheduleBtn, FQA, Question, Row, Answer} from './landing-page-float-buttons.styles'
+import { Container ,Circle, ContentContainer, Header, Body, Title, Schedule,ScheduleBtn, FQA, Question, Row, Answer, Div} from './landing-page-float-buttons.styles'
 import {CalendarCheck, Clock, DotsThreeOutline,X} from 'phosphor-react';
 import {BsChevronDown as Arrow} from 'react-icons/bs';
 
@@ -38,10 +38,10 @@ export const FloatingButton: FC = () => {
         <ContentContainer>
           <Header/>
           <Body>
-            <div>
+            <Div>
               <Title>Hi, there 👋</Title>
               <div style={{color:'#fff',opacity:.5}}>Ask me anything, or send your feedback</div>
-            </div>
+            </Div>
             <Schedule>
               <div style={{fontWeight:600,fontSize:'1.1em'}}>Schedule a conversation</div>
               <div style={{display:'flex', alignItems:'center', gap:5}}>

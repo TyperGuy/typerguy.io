@@ -52,7 +52,7 @@ const Footer:React.FC = () =>(
           />
           <div style={{marginTop:10}}>
             <Button>
-              Subscrever
+              SUBSCRIBE
             </Button>
          </div>
       </div>
