@@ -1,5 +1,5 @@
 import { FC, useImperativeHandle, forwardRef, useState, useCallback, } from 'react';
-import { Container} from './modal.styles';
+import { ChildContainer, Container} from './modal.styles';
 import Settings from './settings';
 import Dialog from './dialog';
 import Reasons from './reasons';
@@ -17,6 +17,7 @@ const Modal: FC = () => {
  if(showModal)
   return (
     <Container>
+      <ChildContainer>
       {
         (targetModal===typeModal.ask) &&
         <Dialog setShowModal={setShowModal} setTargetModal={setTargetModal}/>
@@ -29,6 +30,7 @@ const Modal: FC = () => {
         (targetModal===typeModal.choose) &&
         <Settings setShowModal={setShowModal} setTargetModal={setTargetModal}/>
       }
+      </ChildContainer>
     </Container>
   )
 

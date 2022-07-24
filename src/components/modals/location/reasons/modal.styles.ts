@@ -21,8 +21,8 @@ export const Container = styled.div`
 `
 
 export const Content = styled.div`
-  width: 400px;
-  height: 450px;
+  width: 450px;
+  height: 680px;
   background-color: #fff;
   margin: 20px;
   display: flex;
@@ -61,31 +61,27 @@ export const Description = styled.p`
 export const Button = styled.button`
   width: 150px;
   height: 50px;
-  background: #222;
-  font-weight: 400;
-  border:3px solid #222;
+  background-color: #6667ab;
+  font-weight: 700;
   box-sizing: border-box;
   cursor: pointer;
   color: #fff;
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: none;
   &:hover{
-    background-color: #FFC32B;
-    color: #222;
+    background-color:rgba(102, 103, 171,.8);
   }
 `
 export const Span = styled.button`
-  height: 40px;
+   height: 40px;
   background: #fff;
   border: none;
-  color: #808080;
-  font-weight: 300;
+  color: #222;
+  font-weight: 400;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
-  &:hover{
-   color: #222;
-  }
 `
 
 export const Title = styled.p`
