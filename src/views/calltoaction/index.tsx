@@ -44,7 +44,7 @@ const Calltoaction: FC = () => {
             >
               <Button
                 onClick={setIsOpen}>
-                QUERO SER PALESTRANTE
+                SEND ME AN EMAIL
               </Button>
               <PlayButton
                 onClick={setIsOpenVideo}>
