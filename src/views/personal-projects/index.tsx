@@ -1,29 +1,21 @@
 
-import {Container} from './Projects.styles';
-import Lottie from 'react-lottie';
-import animationData from '../../lotties/not-found.json';
+import {Container, ExperiecesContainer, Subtitle, Title} from './Projects.styles';
+import ExperienceCard from '../../components/exprecience';
 
-const Projects : React.FC =()=>{
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-  };
+const Experiences : React.FC =()=>{
 
   return(
     <Container>
-      <div style={{textAlign: 'center',color:'#b6bbc4'}}>
-        <Lottie
-          options={defaultOptions}
-          height={200}
-          width={200}
-        />
-        <h2>Personal Projects</h2>
-        <span>Resolvendo...</span>
+      <div>
+        <Title>My work experiences</Title>
+        <Subtitle>A list of where I have worked in the last 5 years</Subtitle>
       </div>
+      <ExperiecesContainer>
+        <ExperienceCard/>
+      </ExperiecesContainer>
     </Container>
   )
 }
 
-export default Projects;
+export default Experiences;
