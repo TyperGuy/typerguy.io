@@ -1,27 +1,22 @@
 
-import {Container} from './Projects.styles';
-import Lottie from 'react-lottie';
-import animationData from '../../lotties/not-found.json';
+import {Container, ProjectContainer, Subtitle, Title} from './Projects.styles';
+import ProjectCard from '../../components/project';
+
 
 const Projects : React.FC =()=>{
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-  };
-
   return(
     <Container>
-      <div style={{textAlign: 'center',color:'#b6bbc4'}}>
-        <Lottie
-          options={defaultOptions}
-          height={200}
-          width={200}
-        />
-        <h2>Projects</h2>
-        <span>Resolvendo...</span>
+      <div>
+        <Title>Find my projects here</Title>
+        <Subtitle>You can use these projects to evaluate my works</Subtitle>
       </div>
+      <ProjectContainer>
+        <ProjectCard/>
+        <ProjectCard/>
+        <ProjectCard/>
+        <ProjectCard/>
+      </ProjectContainer>
     </Container>
   )
 }

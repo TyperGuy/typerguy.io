@@ -32,6 +32,10 @@ export const Marker = styled.div<{pos:number}>`
   transition: all .5s ease-in-out;
 `;
 
+export const MenuElement = styled.span`
+  height: 30px;
+`;
+
 
 export const CardContainer = styled.div`
   width: 100%;

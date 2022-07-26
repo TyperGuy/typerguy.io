@@ -1,5 +1,5 @@
 
-import {Container,ChildContainer,CardContainer,Flex, Row, Marker} from './Content.styles';
+import {Container,ChildContainer,CardContainer,Flex, Row, Marker, MenuElement} from './Content.styles';
 import { useState } from 'react';
 import Projects from '../projects';
 import Startups from '../startups';
@@ -26,9 +26,9 @@ const Events : React.FC =()=>{
     <Container>
       <ChildContainer>
         <Flex>
-          <span onClick={()=> {setPos(0);setSelected("projects")}}>{menuTitles.projects.title}</span>
-          <span onClick={()=> {setPos(110);setSelected("startups")}}>{menuTitles.startups.title}</span>
-          <span onClick={()=> {setPos(230);setSelected("experiences")}}>{menuTitles.experiences.title}</span>
+          <MenuElement  onClick={()=> {setPos(0);setSelected("projects")}}>{menuTitles.projects.title}</MenuElement>
+          <MenuElement  onClick={()=> {setPos(115);setSelected("startups")}}>{menuTitles.startups.title}</MenuElement>
+          <MenuElement  onClick={()=> {setPos(230);setSelected("experiences")}}>{menuTitles.experiences.title}</MenuElement >
         </Flex>
         <Row><Marker pos={pos}/></Row>
         <div>
