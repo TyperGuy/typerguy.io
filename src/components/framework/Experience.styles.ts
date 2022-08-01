@@ -1,17 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 300px;
-  height: 322px;
+  width: 150px;
+  height: 150px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
+  display: grid;
+  align-items: center;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   transition: all .3s ease-in-out;
-  padding: 10px;
   :hover{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   }

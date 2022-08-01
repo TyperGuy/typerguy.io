@@ -1,29 +1,36 @@
+import {
+  Container,
+  Subtitle,
+  Title,
+  StartupCard,
+  Link,
+  Flex,
+  Startupname,
+  Startupexplanation,
+} from "./Projects.styles";
+import ProjectCard from "../../components/project";
+import { ArrowSquareOut } from "phosphor-react";
 
-import {Container} from './Projects.styles';
-import Lottie from 'react-lottie';
-import animationData from '../../lotties/not-found.json';
-
-const Projects : React.FC =()=>{
-
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-  };
-
-  return(
+const Startups: React.FC = () => {
+  return (
     <Container>
-      <div style={{textAlign: 'center',color:'#b6bbc4'}}>
-        <Lottie
-          options={defaultOptions}
-          height={200}
-          width={200}
-        />
-        <h2>Startups</h2>
-        <span>Resolvendo...</span>
+      <div>
+        <Title>Find here all startups founded by me</Title>
+        <Subtitle></Subtitle>
       </div>
+      <StartupCard>
+        <Startupname>Esse é o meu Titulo</Startupname>
+        <Startupexplanation>
+          I'm a frontend developer passionate about building high performance
+          frontend solutions.
+        </Startupexplanation>
+        <Flex>
+          <Link>www.agiliza.me</Link>
+          <ArrowSquareOut size={18} weight="fill" />
+        </Flex>
+      </StartupCard>
     </Container>
-  )
-}
+  );
+};
 
-export default Projects;
+export default Startups;

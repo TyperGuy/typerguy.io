@@ -23,7 +23,7 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   width: 400px;
-  height: 260px;
+  height: 270px;
   background-color: #fff;
   margin: 20px;
   display: flex;
@@ -35,13 +35,14 @@ export const Content = styled.div`
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `
 
-export const Description = styled.p`
+export const Description = styled.div`
   font-size: 1rem;
   width: 80%;
   text-align: justify;
   font-weight: 300;
   color: #808080;
   margin: 0;
+  margin-top: -10px;
 `
 
 export const Button = styled.button`
@@ -71,7 +72,7 @@ export const Span = styled.button`
 `
 
 export const Title = styled.p`
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600 ;
 `
 

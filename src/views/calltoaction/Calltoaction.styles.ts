@@ -51,6 +51,7 @@ export const Pulse = keyframes`
 
 export const Image = styled.img`
   height: 400px;
+  border-radius: 8px;
 `
 export const Circle = styled.div`
   display: grid;

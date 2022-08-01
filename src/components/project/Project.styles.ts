@@ -9,12 +9,8 @@ export const Container = styled.div`
   gap: .5rem;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  //box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   transition: all .3s ease-in-out;
-  padding: 10px;
-  :hover{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-  }
 `;
 
 export const Title = styled.div`
