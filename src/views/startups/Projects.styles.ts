@@ -10,23 +10,23 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 700;
 `;
 export const Subtitle = styled.div`
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: #666;
 `;
+
 
 export const Flex = styled.div`
   display: flex;
   gap: 2px;
   align-items: center;
   transition: all 1s ease-in-outSS;
-  color: #666;
+  color: blue;
   &:hover{
     gap: 3px;
-    color: blue;
   }
 `;
 
@@ -44,6 +44,16 @@ export const StartupCard = styled.div`
   transition: all .5s ease-in-out;
   &:hover{
     border-left: 2px solid red;
-    padding-left: 5px;
+    padding-left: 10px;
   }
 `;
+
+export const Startupname = styled.div`
+  font-size: 1.2em;
+  font-weight: 700;
+`;
+export const Startupexplanation = styled.div`
+  font-size: 1.1em;
+  color: #666;
+`;
+

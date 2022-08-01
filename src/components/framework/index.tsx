@@ -20,11 +20,7 @@ const defaultOptions = {
 const Project: React.FC = () => {
   return (
     <Container>
-      <div style={{ textAlign: "center", color: "#0059ff" }}>
-        <Lottie options={defaultOptions} height={200} width={200} />
-        <Title>Looks like something went wrong</Title>
-        <span>Solving...</span>
-      </div>
+      <Lottie options={defaultOptions} height={50} width={50} />
     </Container>
   );
 };

@@ -5,6 +5,8 @@ import {
   StartupCard,
   Link,
   Flex,
+  Startupname,
+  Startupexplanation,
 } from "./Projects.styles";
 import ProjectCard from "../../components/project";
 import { ArrowSquareOut } from "phosphor-react";
@@ -13,15 +15,15 @@ const Startups: React.FC = () => {
   return (
     <Container>
       <div>
-        <Title>Find my projects here</Title>
-        <Subtitle>You can use these projects to evaluate my works</Subtitle>
+        <Title>Find here all startups founded by me</Title>
+        <Subtitle></Subtitle>
       </div>
       <StartupCard>
-        <Title>Esse é o meu Titulo</Title>
-        <Subtitle>
+        <Startupname>Esse é o meu Titulo</Startupname>
+        <Startupexplanation>
           I'm a frontend developer passionate about building high performance
           frontend solutions.
-        </Subtitle>
+        </Startupexplanation>
         <Flex>
           <Link>www.agiliza.me</Link>
           <ArrowSquareOut size={18} weight="fill" />
