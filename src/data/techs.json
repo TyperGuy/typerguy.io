@@ -1,0 +1,31 @@
+{
+  "languages":[
+    {
+      "techKey":"ts",
+      "icon":"/techs/typescript.png",
+      "inf" : {
+        "name" : "Typescript",
+        "useSince" : 2020,
+        "category" : "Main Tecnology"
+      }
+    },
+    {
+      "techKey":"js",
+      "icon":"/techs/javascript.png",
+      "inf" : {
+        "name" : "Javascript",
+        "useSince" : 2020,
+        "category" : "Main Tecnology"
+      }
+    },
+    {
+      "techKey":"fb",
+      "icon":"/techs/firebase.png",
+      "inf" : {
+        "name" : "Firebase",
+        "useSince" : 2020,
+        "category" : "Alternative Tecnology"
+      }
+    }
+  ]
+}

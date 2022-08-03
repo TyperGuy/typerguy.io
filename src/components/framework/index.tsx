@@ -1,26 +1,20 @@
-import {
-  Container,
-  Cover,
-  Description,
-  Flex,
-  Footer,
-  Link,
-  Tecnology,
-  Title,
-} from "./Experience.styles";
-import Lottie from "react-lottie";
-import animationData from "../../lotties/not-found.json";
+import { Container, Image } from "./Experience.styles";
+import Data from "../../data/techs.json";
 
-const defaultOptions = {
-  loop: true,
-  autoplay: true,
-  animationData: animationData,
-};
+interface TechPropsType {
+  techKey: string;
+  icon: string;
+  inf: {
+    name: string;
+    useSince: number;
+    category: string;
+  };
+}
 
-const Project: React.FC = () => {
+const Project: React.FC<TechPropsType> = ({ techKey, icon, inf }) => {
   return (
     <Container>
-      <Lottie options={defaultOptions} height={50} width={50} />
+      <Image src={icon} alt={techKey} />
     </Container>
   );
 };

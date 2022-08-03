@@ -1,10 +1,6 @@
-import {
-  Container,
-  ExperiecesContainer,
-  Subtitle,
-  Title,
-} from "./Projects.styles";
+import { Container, ExperiecesContainer, Title } from "./Stacks.styles";
 import ExperienceCard from "../../components/framework";
+import Data from "../../data/techs.json";
 
 const Experiences: React.FC = () => {
   return (
@@ -13,7 +9,9 @@ const Experiences: React.FC = () => {
         <Title>All tecnologies, frameworks and languages i use</Title>
       </div>
       <ExperiecesContainer>
-        <ExperienceCard />
+        {Data.languages.map((lang) => (
+          <ExperienceCard key={lang.techKey} {...lang} />
+        ))}
       </ExperiecesContainer>
     </Container>
   );
