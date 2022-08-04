@@ -41,11 +41,14 @@ export const StartupCard = styled.div`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  transition: all .5s ease-in-out;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ddd;
   &:hover{
-    border-left: 2px solid red;
-    padding-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-color:#fff;
   }
+  transition: all .3s ease-in-out;
 `;
 
 export const Startupname = styled.div`

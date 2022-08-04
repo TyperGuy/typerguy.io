@@ -4,41 +4,36 @@ import styled,{keyframes} from 'styled-components';
 
 
 export const Container = styled.div`
-  min-height : 500px;
   max-width: 1128px;
   width: 1128px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 70px;
-`;
-export const Content = styled.span`
-  line-height: 1;
-  color: #222;
-  font-size: calc(1px + 1vw);
-  max-width: 500px;
-  margin:0;
-`
 
-export const Underlined = styled.strong`
-
-  -webkit-background: #6667ab;
-  -webkit-text-fill-color: #6667ab;
-  position: relative;
-  display: inline-block;
-  &:after{
-    content: "";
-    position: absolute;
-    display: block;
-    border-top: 4.9px solid #222;
-    border-radius: 47%;
-    left: -6px;
-    right: -6px;
-    bottom: -9px;
-    height: 11px;
-    transform: rotate(-0.6deg);
+  @media only screen and (min-width: 768px ) and (max-width: 768px) {
+    background-color: red;
+    
   }
+  @media screen and (max-width: 600px) {
+
+  }
+  @media screen and (max-width: 1276px) {
+   flex-direction: column-reverse;
+   align-items: flex-start;
+   width: 90%;
+   padding: 10px;
+  }
+`;
+export const Content = styled.div`
+  color: #222;
+  font-size: 1.5em;
+  width: 400px;
 `
+
+
+
+
 
 export const Pulse = keyframes`
 	0% {
@@ -52,6 +47,9 @@ export const Pulse = keyframes`
 export const Image = styled.img`
   height: 400px;
   border-radius: 8px;
+  @media screen and (max-width: 1276px) {
+    margin-bottom: 20px;
+  }
 `
 export const Circle = styled.div`
   display: grid;
