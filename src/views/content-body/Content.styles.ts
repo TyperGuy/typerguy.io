@@ -7,6 +7,7 @@ export const Container = styled.div`
   place-items: center;
   cursor: pointer;
   background-color: #fff;
+
 `;
 export const ChildContainer = styled.div`
   width: 1128px;
@@ -14,6 +15,9 @@ export const ChildContainer = styled.div`
   flex-direction: column;
   cursor: pointer;
   margin: 20px 0;
+  @media screen and (max-width: 1276px) {
+    width: 90%;
+  }
 `;
 
 export const Row = styled.div`

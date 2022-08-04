@@ -5,28 +5,46 @@ import Link from 'next/link';
 // Styled component named StyledButton
 export const Container = styled.div`
   width: 100vw;
-  height: 281px;
   display: grid;
   place-items: center;
   background-color: #6667ba;
   color: #fff;
+  margin-top: 40px;
 `;
 
 export const ChildContainer = styled.div`
   height:100%;
-  width: 100%;
+  width: 100vw;
   display: grid;
   place-items: center;
   background-image: url('background-face.png');
 
+
 `;
 
 export const Stats = styled.div`
+  margin: 60px 0 ;
   width: 1128px;
   display: flex;
   justify-content:flex-start;
   align-items: center;
   gap:1.5rem;
+  @media screen and (max-width: 1276px) {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+`;
+
+export const LineDivisor = styled.div`
+  height: 100px;
+  width: 2px;
+  background-color: #fff;
+  border-radius: 16px;
+  @media screen and (max-width: 1276px) {
+    height: 2px;
+    width: 200px;
+  }
 `;
 
 export const A = styled.a`

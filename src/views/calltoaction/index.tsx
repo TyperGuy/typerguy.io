@@ -1,12 +1,6 @@
 import { FC, useState } from "react";
 import dynamic from "next/dynamic";
-import {
-  Container,
-  Content,
-  Underlined,
-  Image,
-  Circle,
-} from "./Calltoaction.styles";
+import { Container, Content, Image, Circle } from "./Calltoaction.styles";
 import Button from "../../components/button";
 import PlayButton from "../../components/button/PlayButton";
 import { PlayCircle } from "phosphor-react";
@@ -18,12 +12,12 @@ const VideoWithNoSSR = dynamic(() => import("../../components/video"), {
 });
 
 const NameStyle = {
-  fontSize: "calc(8.3333px + 1.85185vw)",
+  fontSize: "2em",
 };
 const SloganStyle = {
-  fontSize: "calc(8.3333px + 1.85185vw)",
+  fontSize: "2.5em",
   color: "#6667ba",
-  marginTop: -5,
+  marginTop: -3,
 };
 
 const Calltoaction: FC = () => {
@@ -32,10 +26,9 @@ const Calltoaction: FC = () => {
   return (
     <div
       style={{
-        width: "100vw",
+        width: "100%",
         display: "grid",
         placeItems: "center",
-        backgroundColor: " #f8f9fa",
       }}
     >
       <Container>
@@ -44,7 +37,6 @@ const Calltoaction: FC = () => {
             display: "flex",
             flexDirection: "column",
             gap: "2rem",
-            width: 600,
           }}
         >
           <div>
@@ -59,6 +51,7 @@ const Calltoaction: FC = () => {
             style={{
               display: "flex",
               gap: "1rem",
+              flexWrap: "wrap",
             }}
           >
             <Button onClick={setIsOpen}>SEND ME AN EMAIL</Button>
