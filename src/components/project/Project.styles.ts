@@ -8,8 +8,13 @@ export const Container = styled.div`
   flex-direction: column;
   gap: .5rem;
   border-radius: 8px;
+  padding: 10px;
   overflow: hidden;
-  //box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  border: 1px solid #ddd;
+  &:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    border-color:#fff;
+  }
   transition: all .3s ease-in-out;
 `;
 
@@ -34,6 +39,13 @@ export const Link = styled.div`
   color: #666;
   :hover{
     color: blue;
+  }
+`;
+export const GitHub = styled.div`
+  height: 20px;
+  color: #666;
+  :hover{
+    color: #222;
   }
 `;
 

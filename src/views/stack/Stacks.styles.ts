@@ -21,7 +21,7 @@ export const Subtitle = styled.div`
 export const ExperiecesContainer = styled.div`
   width: 88%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 1.5rem;
   background-color: transparent;
 `;

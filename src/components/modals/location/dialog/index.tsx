@@ -34,7 +34,7 @@ const Dialog: React.FC<{
           gap: "1rem",
         }}
       >
-        <Span onClick={() => setShowModal(false)}>Sorry, i can't</Span>
+        <Span onClick={() => setShowModal(false)}>Deny</Span>
         <Button onClick={() => setShowModal(false)}>AUTHORIZE</Button>
       </div>
     </Content>

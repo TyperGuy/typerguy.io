@@ -1,64 +1,44 @@
-import { FacebookLogo } from 'phosphor-react';
-import { TiSocialInstagramCircular as Insta,TiSocialLinkedinCircular as Linkedin} from "react-icons/ti";
-import Styles from './Footer.module.scss';
-import {Input} from '../inputs/Inputs.style';
-import Button from 'components/button';
-import Image from 'next/image';
+import Styles from "./Footer.module.scss";
+import { Input } from "../inputs/Inputs.style";
+import Button from "components/button";
+import { FileArrowDown } from "phosphor-react";
 
-
-const Footer:React.FC = () =>(
+const Footer: React.FC = () => (
   <div className={Styles.container}>
     <div className={Styles.childContainer}>
       <div className={Styles.column}>
-        <img
-         style={{width:150}}
-         src="/logotipo.png"/>
-        <p>Caffeina é uma comunidade sem fins lucrativos,
-          que foi criada em 2021 com o inruito de conectar
-          a comunidade aos líderes juvenis angolanos
-        </p>
-
-        <div style={{display:'flex',gap:'1rem'}}>
-          <FacebookLogo size={32} weight="fill" color='#8a8a8a' />
-          <Insta size={32} color='#8a8a8a' />
-          <Linkedin size={32} color='#8a8a8a' />
+        <div className={Styles.typerguy}>Typerguy.io</div>
+        <div>
+          I'm a frontend developer passionate about building high performance
+          frontend solutions.
+        </div>
+        <div>
+          <Button onClick={() => {}}>
+            <FileArrowDown size={25} weight="fill" />
+            DOWNLOAD RESUME
+          </Button>
         </div>
       </div>
 
       <div className={Styles.column}>
-        <p className={Styles.title}>INSTITUCIONAL</p>
-         <div className={Styles.columnChild}>
-            <span>Uma Coisa</span>
-            <span>Outra coisa</span>
-            <span>Coisda</span>
-            <span>Outraas</span>
-         </div>
+        <div className={Styles.title}>PERSONAL NETWORKS</div>
+        <div className={Styles.columnChild}>
+          <span>FACEBOOK</span>
+          <span>INSTAGRAM</span>
+          <span>TWITTER</span>
+        </div>
       </div>
 
       <div className={Styles.column}>
-        <p className={Styles.title}>AJUDA</p>
-         <div className={Styles.columnChild}>
-            <span>Termos e Condições</span>
-            <span>Politicas de privacidade</span>
-            <span>FQA</span>
-            <span>Sugestões</span>
-         </div>
+        <div className={Styles.title}>PROFISSIONAL NETWORKS</div>
+        <div className={Styles.columnChild}>
+          <span>LINKEDIN</span>
+          <span>GITHUB</span>
+          <span>MEDIUM</span>
+        </div>
       </div>
-
-      <div className={Styles.column}>
-        <p className={Styles.title}>NEWSLATTER</p>
-          <Input
-              placeholder="Seu Email"
-          />
-          <div style={{marginTop:10}}>
-            <Button>
-              SUBSCRIBE
-            </Button>
-         </div>
-      </div>
-
     </div>
-    <p style={{color:'#8a8a8a'}}>© 2022 Caffeína, Todos os direitos reservados</p>
+    <p style={{ color: "#8a8a8a" }}>© 2022 Typerguy, All rights reserved</p>
   </div>
 );
 
