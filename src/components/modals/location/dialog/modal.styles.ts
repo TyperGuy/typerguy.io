@@ -46,7 +46,7 @@ export const Description = styled.div`
 `
 
 export const Button = styled.button`
-  width: 150px;
+  width: 190px;
   height: 50px;
   background-color: #6667ab;
   font-weight: 700;

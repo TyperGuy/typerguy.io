@@ -12,7 +12,7 @@ const Footer: React.FC = () => (
           I'm a frontend developer passionate about building high performance
           frontend solutions.
         </div>
-        <div style={{ marginTop: 18 }}>
+        <div>
           <Button onClick={() => {}}>
             <FileArrowDown size={25} weight="fill" />
             DOWNLOAD RESUME
@@ -21,36 +21,24 @@ const Footer: React.FC = () => (
       </div>
 
       <div className={Styles.column}>
-        <p className={Styles.title}>INSTITUCIONAL</p>
+        <div className={Styles.title}>PERSONAL NETWORKS</div>
         <div className={Styles.columnChild}>
-          <span>Uma Coisa</span>
-          <span>Outra coisa</span>
-          <span>Coisda</span>
-          <span>Outraas</span>
+          <span>FACEBOOK</span>
+          <span>INSTAGRAM</span>
+          <span>TWITTER</span>
         </div>
       </div>
 
       <div className={Styles.column}>
-        <p className={Styles.title}>AJUDA</p>
+        <div className={Styles.title}>PROFISSIONAL NETWORKS</div>
         <div className={Styles.columnChild}>
-          <span>Termos e Condições</span>
-          <span>Politicas de privacidade</span>
-          <span>FQA</span>
-          <span>Sugestões</span>
-        </div>
-      </div>
-
-      <div className={Styles.column}>
-        <p className={Styles.title}>NEWSLATTER</p>
-        <Input placeholder="Seu Email" />
-        <div style={{ marginTop: 20 }}>
-          <Button onClick={() => {}}>SUBSCRIBE</Button>
+          <span>LINKEDIN</span>
+          <span>GITHUB</span>
+          <span>MEDIUM</span>
         </div>
       </div>
     </div>
-    <p style={{ color: "#8a8a8a" }}>
-      © 2022 Caffeína, Todos os direitos reservados
-    </p>
+    <p style={{ color: "#8a8a8a" }}>© 2022 Typerguy, All rights reserved</p>
   </div>
 );
 

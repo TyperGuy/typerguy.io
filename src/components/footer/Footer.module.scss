@@ -9,8 +9,9 @@
 
 }
 .childContainer{
+  width: 1125px;
   display: flex;
-  gap: 3rem;
+  justify-content: space-between;
   border-bottom: 1px solid #cecece;
   align-Items:center;
   padding-bottom: 2rem;
@@ -18,8 +19,9 @@
 .column{
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 20px;
   max-width: 400px;
+  height: 200px;
 }
 .columnChild{
   display: flex;
@@ -35,6 +37,6 @@
   color: #6667ab;
   font-size:1.3em;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-family: 'Archivo Black',cursive,'sans-sarif';
 }

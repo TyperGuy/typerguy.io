@@ -41,6 +41,13 @@ export const Link = styled.div`
     color: blue;
   }
 `;
+export const GitHub = styled.div`
+  height: 20px;
+  color: #666;
+  :hover{
+    color: #222;
+  }
+`;
 
 export const Tecnology = styled.div`
   width: 15px ;
