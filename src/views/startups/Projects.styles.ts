@@ -25,6 +25,9 @@ export const Flex = styled.div`
   align-items: center;
   transition: all 1s ease-in-outSS;
   color: blue;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #e6ecf8;
   &:hover{
     gap: 3px;
   }
@@ -36,11 +39,12 @@ export const Link = styled.a`
 
 
 export const StartupCard = styled.div`
-  width: 300px;
+  width: 350px;
   gap: 10px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  align-items: center;
   border-radius: 8px;
   padding: 10px;
   box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
@@ -54,8 +58,11 @@ export const Startupname = styled.div`
   font-size: 1.2em;
   font-weight: 700;
 `;
-export const Startupexplanation = styled.div`
+export const Startupexplanation = styled.p`
   font-size: 1.1em;
   color: #666;
+  text-align: center;
+  letter-spacing: 0;
+  margin: 0 10px;
 `;
 

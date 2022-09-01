@@ -59,7 +59,7 @@ const Calltoaction: FC = () => {
               <Circle>
                 <PlayCircle size={32} weight="fill" />
               </Circle>
-              QUERO SER
+              WATCH PITCH
             </PlayButton>
           </div>
         </div>
