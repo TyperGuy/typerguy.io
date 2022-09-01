@@ -11,6 +11,7 @@ export const Container = styled.div`
 `;
 export const ChildContainer = styled.div`
   width: 1128px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   cursor: pointer;

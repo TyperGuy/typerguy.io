@@ -10,12 +10,11 @@ export const Container = styled.div`
   border-radius: 8px;
   padding: 10px;
   overflow: hidden;
-  border: 1px solid #ddd;
-  &:hover{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-    border-color:#fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 20px;
+  transition: all .1s ease-in-out;
+   &:hover{
+    outline: #222 solid 2px ;
   }
-  transition: all .3s ease-in-out;
 `;
 
 export const Title = styled.div`
@@ -37,14 +36,14 @@ export const Link = styled.div`
   justify-content: center;
   align-items: center;
   color: #666;
-  :hover{
+  &:hover{
     color: blue;
   }
 `;
 export const GitHub = styled.div`
   height: 20px;
   color: #666;
-  :hover{
+  &:hover{
     color: #222;
   }
 `;
