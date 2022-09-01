@@ -16,7 +16,8 @@ function MyApp({ Component, pageProps }: CustomProps) {
         display: 'flex',
         flexDirection :'column',
         justifyContent: 'center',
-        position: 'relative'
+        position: 'relative',
+        backgroundColor: '#fff'
         }}>
        <Component {...pageProps} />
        <Footer/>

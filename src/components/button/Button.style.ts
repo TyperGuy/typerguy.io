@@ -6,8 +6,8 @@ export const CustomButton = styled.button`
   color:#fff;
   border: 3px solid #222;
   border-radius: 8px;
-  transition: all 0.2s ease-in-out;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transition: all .5s ease-in-out;
+  box-shadow: rgba(34, 34, 34, 0.5) 0px 7px 29px 0px;
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
@@ -23,8 +23,8 @@ export const PlayButton = styled.button`
   color: #6667ab;
   border: none;
   border-radius: 8px;
-  transition: all 0.2s ease-in-out;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all .5s ease-in-out;
+  box-shadow: rgba(102, 103, 171, 0.5) 0px 7px 29px 0px;
   padding: 0 1.5rem;
   display: flex;
   align-items: center;

@@ -14,10 +14,6 @@ import { ArrowSquareOut } from "phosphor-react";
 const Startups: React.FC = () => {
   return (
     <Container>
-      <div>
-        <Title>Find here all startups founded by me</Title>
-        <Subtitle></Subtitle>
-      </div>
       <StartupCard>
         <Startupname>Esse é o meu Titulo</Startupname>
         <Startupexplanation>

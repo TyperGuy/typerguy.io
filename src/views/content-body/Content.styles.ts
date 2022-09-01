@@ -7,18 +7,30 @@ export const Container = styled.div`
   place-items: center;
   cursor: pointer;
   background-color: #fff;
+  position: relative;
+  height: 1000px;
 
 `;
 export const ChildContainer = styled.div`
-  width: 1128px;
+  width: 1328px;
+  height: 900px ;
   display: flex;
+  border-radius: 10px;
   flex-direction: column;
   cursor: pointer;
-  margin: 20px 0;
+  z-index:10;
+  position: absolute;
+  top: -100px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+  padding-left: 100px;
   @media screen and (max-width: 1276px) {
     width: 90%;
   }
 `;
+
+
 
 export const Row = styled.div`
   width:100%;

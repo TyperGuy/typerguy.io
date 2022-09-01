@@ -5,9 +5,6 @@ import Data from "../../data/techs.json";
 const Experiences: React.FC = () => {
   return (
     <Container>
-      <div>
-        <Title>All tecnologies, frameworks and languages i use</Title>
-      </div>
       <ExperiecesContainer>
         {Data.languages.map((lang) => (
           <ExperienceCard key={lang.techKey} {...lang} />

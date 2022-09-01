@@ -25,12 +25,3 @@ export const ExperiecesContainer = styled.div`
   gap: 1.5rem;
   background-color: transparent;
 `;
-export const ExperieceCard = styled.div`
-  width: 300px;
-  height: 322px;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  background-color:red;
-  border-radius: 8px;
-`;

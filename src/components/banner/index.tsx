@@ -15,11 +15,11 @@ import { PresentationChart } from "phosphor-react";
 
 const Styles = {
   title: {
-    fontSize: 40,
+    fontSize: 30,
     fontWeigth: 600,
   },
   content: {
-    fontSize: 20,
+    fontSize: 18,
     opacity: 0.7,
   },
 };
@@ -29,7 +29,7 @@ const Banner: React.FC = () => {
     <Container>
       <Child>
         <Stats>
-          <PresentationChart size={100} weight="fill" />
+          <PresentationChart size={70} weight="fill" />
           <LineDivisor />
           <div>
             <div style={Styles.title}>US$ 309 bi</div>

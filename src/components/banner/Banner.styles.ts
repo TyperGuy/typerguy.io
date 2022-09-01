@@ -25,6 +25,7 @@ export const ChildContainer = styled.div`
 export const Stats = styled.div`
   margin: 60px 0 ;
   width: 1128px;
+  height: 200px ;
   display: flex;
   justify-content:flex-start;
   align-items: center;
@@ -37,7 +38,7 @@ export const Stats = styled.div`
 `;
 
 export const LineDivisor = styled.div`
-  height: 100px;
+  height: 70px;
   width: 2px;
   background-color: #fff;
   border-radius: 16px;

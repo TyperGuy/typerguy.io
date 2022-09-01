@@ -43,10 +43,9 @@ export const StartupCard = styled.div`
   box-sizing: border-box;
   border-radius: 8px;
   padding: 10px;
-  border: 1px solid #ddd;
+  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
   &:hover{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-    border-color:#fff;
   }
   transition: all .3s ease-in-out;
 `;

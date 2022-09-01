@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+
+
+export const Container = styled.div<{index:number,colorsArray :string[]}>`
   width: 300px;
   height: 322px;
   box-sizing: border-box;
@@ -10,12 +12,12 @@ export const Container = styled.div`
   border-radius: 8px;
   padding: 10px;
   overflow: hidden;
-  border: 1px solid #ddd;
-  &:hover{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-    border-color:#fff;
-  }
+  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
   transition: all .3s ease-in-out;
+  &:hover{
+    outline:2px solid ${props=>props.colorsArray[props.index]};
+  }
+
 `;
 
 export const Title = styled.div`
