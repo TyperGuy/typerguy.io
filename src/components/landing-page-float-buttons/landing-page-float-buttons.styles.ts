@@ -14,10 +14,10 @@ export const TurnBig = keyframes`
 
 export const SlideUp = keyframes`
  0%{
-  
+
  }
  100%{
-  
+
  }
 `;
 
@@ -46,8 +46,8 @@ export const Div = styled.div`
 `;
 
 export const Circle = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: grid;
   align-self:flex-end;
   place-items: center;

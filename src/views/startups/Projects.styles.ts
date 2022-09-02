@@ -34,12 +34,14 @@ export const Flex = styled.div`
 `;
 
 export const Link = styled.a`
-  font-size: 1.2em;
+  font-size: 1em;
+  color:#4361ee;
 `;
 
 
 export const StartupCard = styled.div`
   width: 350px;
+  height: 236px;
   gap: 10px;
   display: flex;
   flex-direction: column;
@@ -47,6 +49,7 @@ export const StartupCard = styled.div`
   align-items: center;
   border-radius: 8px;
   padding: 10px;
+  justify-content:center;
   box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
   &:hover{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
@@ -54,12 +57,11 @@ export const StartupCard = styled.div`
   transition: all .3s ease-in-out;
 `;
 
-export const Startupname = styled.div`
-  font-size: 1.2em;
-  font-weight: 700;
+export const StartupLogo = styled.img`
+  height: 50px ;
 `;
 export const Startupexplanation = styled.p`
-  font-size: 1.1em;
+  font-size: 1em;
   color: #666;
   text-align: center;
   letter-spacing: 0;

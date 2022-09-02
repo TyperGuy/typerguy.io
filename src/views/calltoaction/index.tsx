@@ -63,7 +63,7 @@ const Calltoaction: FC = () => {
             </PlayButton>
           </div>
         </div>
-        <Image src="me.png" alt="Protest" />
+        <Image src="cartoon.png" alt="Protest" />
         <Modal setShowModal={setIsOpen} isOpen={isOpen}>
           <Form />
         </Modal>

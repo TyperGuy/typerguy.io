@@ -5,7 +5,7 @@ import {
   StartupCard,
   Link,
   Flex,
-  Startupname,
+  StartupLogo,
   Startupexplanation,
 } from "./Projects.styles";
 import ProjectCard from "../../components/project";
@@ -15,14 +15,14 @@ const Startups: React.FC = () => {
   return (
     <Container>
       <StartupCard>
-        <Startupname>Esse é o meu Titulo</Startupname>
+        <StartupLogo src="./caffeina.png"/>
         <Startupexplanation>
           I'm a frontend developer passionate about building high performance
           frontend solutions.
         </Startupexplanation>
         <Flex>
-          <Link>www.agiliza.me</Link>
-          <ArrowSquareOut size={18} weight="fill" />
+          <Link>www.caffeina.org</Link>
+          <ArrowSquareOut size={18} weight="fill" color="#4361ee" />
         </Flex>
       </StartupCard>
     </Container>

@@ -13,7 +13,7 @@ export const Container = styled.div`
 
   @media only screen and (min-width: 768px ) and (max-width: 768px) {
     background-color: red;
-    
+
   }
   @media screen and (max-width: 600px) {
 
@@ -45,10 +45,14 @@ export const Pulse = keyframes`
 `;
 
 export const Image = styled.img`
-  height: 400px;
+  height: 300px;
   border-radius: 8px;
   @media screen and (max-width: 1276px) {
     margin-bottom: 20px;
+  }
+
+  &:hover{
+
   }
 `
 export const Circle = styled.div`

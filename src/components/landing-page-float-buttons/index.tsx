@@ -74,7 +74,7 @@ export const FloatingButton: FC = () => {
                           transition: 'all .5s ease-in-out'
                         }}/>
                       </Row>
-                      { 
+                      {
                         (isSpanded===fqa.id)&&
                         <Answer>
                          {fqa.answer}
@@ -91,10 +91,10 @@ export const FloatingButton: FC = () => {
       <Circle onClick={()=>setIsOpen(!isOpen)}>
       {
         isOpen?
-          <X size={28} weight="fill" /> :
+          <X size={20} weight="fill" /> :
           <DotsThreeOutline
             className='top'
-            size={30}
+            size={20}
             weight='fill'
           />
       }
