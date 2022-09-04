@@ -21,5 +21,27 @@ export const Image = styled.img`
   height:70px;
 `;
 
+export const Description = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  align-items: center;
+  height:50px;
+  z-index: 100;
+  top: 110px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+`;
+
+export const Arrow = styled.div`
+  width: 20px;
+  height: 20px;
+  margin-top: -5px;
+  background-color: #fff;
+  transform: rotate(45deg);
+`;
+
 
 

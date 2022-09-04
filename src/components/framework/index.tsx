@@ -1,4 +1,4 @@
-import { Container, Image } from "./Experience.styles";
+import { Container, Image, Description, Arrow } from "./Experience.styles";
 import Data from "../../data/techs.json";
 import { useState } from "react";
 
@@ -20,22 +20,35 @@ const colors = [
   "#3a6ea5",
   "#05668d",
   "#ffadad",
-  "#0cf574"
-]
-
+  "#0cf574",
+];
 
 const Project: React.FC<TechPropsType> = ({ techKey, icon, inf }) => {
-
-  const [index,setIndex] = useState(0);
-  function getRandomColor(colors :string[]):number {
+  const [index, setIndex] = useState(0);
+  const [isHover, setIsHover] = useState(false);
+  function getRandomColor(colors: string[]): number {
     // get random index value from 0 to array.length-1
     const randomIndex = Math.floor(Math.random() * colors.length);
-    if(randomIndex===index) return getRandomColor(colors);
+    if (randomIndex === index) return getRandomColor(colors);
     return randomIndex;
   }
   return (
-    <Container onMouseOver={()=>setIndex(getRandomColor(colors))} colorsArray={colors} index={index}>
+    <Container
+      onMouseOver={() => {
+        setIndex(getRandomColor(colors));
+        setIsHover(true);
+      }}
+      onMouseLeave={() => setIsHover(false)}
+      colorsArray={colors}
+      index={index}
+    >
       <Image src={icon} alt={techKey} />
+      {isHover && (
+        <Description>
+          <Arrow />
+          <span>Firebase</span>
+        </Description>
+      )}
     </Container>
   );
 };

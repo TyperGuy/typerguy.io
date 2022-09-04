@@ -5,7 +5,7 @@ import Button from "../../components/button";
 import PlayButton from "../../components/button/PlayButton";
 import { PlayCircle } from "phosphor-react";
 import Modal from "../../components/modals/generic";
-import Form from "components/speaker-form";
+import Form from "components/forms/send-email";
 
 const VideoWithNoSSR = dynamic(() => import("../../components/video"), {
   ssr: false,
@@ -40,10 +40,10 @@ const Calltoaction: FC = () => {
           }}
         >
           <div>
-            <span style={NameStyle}>Hi, may name is Rai</span>
-            <h1 style={SloganStyle}>I Build things for Web</h1>
+            <span style={NameStyle}>Hi, my name is Rai</span>
+            <h1 style={SloganStyle}>I Build things for Mobile/Web</h1>
             <Content>
-              I'm a frontend developer passionate about building high
+              I'm mobile and frontend developer passionate about building high
               performance frontend solutions.
             </Content>
           </div>

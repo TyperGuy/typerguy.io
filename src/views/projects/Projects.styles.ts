@@ -23,7 +23,7 @@ export const ProjectContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   background-color: red;
-  gap: 1.5rem;
+  gap: 2rem;
   background-color: transparent;
 `;
 export const ProjectCard = styled.div`

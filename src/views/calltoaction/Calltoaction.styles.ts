@@ -28,7 +28,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   color: #222;
   font-size: 1.5em;
-  width: 400px;
+  width: 500px;
 `
 
 

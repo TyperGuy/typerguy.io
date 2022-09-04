@@ -46,13 +46,15 @@ export const Row = styled.div`
   height: 4px;
   border-radius:8px 8px 0 0;
 `
-export const CloseBtn = styled.div`
+export const CloseBtn = styled.button`
   width: 25px;
   height: 25px;
   border-radius:50%;
   background-color: #eee;
-  display: grid;
-  place-items: center;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   align-self: flex-end;
   margin:10px;
   cursor: pointer;
@@ -61,5 +63,13 @@ export const CloseBtn = styled.div`
   &:hover{
     color: #F34747;
     background-color:rgba(255,0,0,.1);
+  }
+  &:focus{
+    color: #F34747;
+    background-color:rgba(255,0,0,.1);
+    outline-style:solid;
+    outline-color:#222;
+    border: 2px solid #fff;
+    outline-width: medium;;
   }
 `

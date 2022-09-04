@@ -35,19 +35,31 @@ export const Flex = styled.div`
   color: #666;
 `;
 export const Link = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #666;
+  width: 26px ;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  transition: all ease-in-out .4s;
+  background-color:rgba(0, 0, 0,.1);
+  color: #555;
   :hover{
+    background-color: rgba(0,0,255,.1);
     color: blue;
   }
 `;
 export const GitHub = styled.div`
-  height: 20px;
-  color: #666;
+  width: 26px ;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  transition: all ease-in-out .4s;
+  background-color:rgba(0, 0, 0,.1);
+  color: #555;
   :hover{
-    color: #222;
+    background-color:rgba(0, 255, 0,.1);
+    color: rgb(0, 100, 0);
   }
 `;
 

@@ -12,7 +12,6 @@ import {
 import { FaGithubAlt } from "react-icons/fa";
 import { useState } from "react";
 
-
 const colors = [
   "#00b9ae",
   "#ea3546",
@@ -21,20 +20,24 @@ const colors = [
   "#3a6ea5",
   "#05668d",
   "#ffadad",
-  "#0cf574"
-]
+  "#0cf574",
+];
 
 const Project: React.FC = () => {
-  const [index,setIndex] = useState(0);
-  function getRandomColor(colors :string[]):number {
+  const [index, setIndex] = useState(0);
+  function getRandomColor(colors: string[]): number {
     // get random index value from 0 to array.length-1
     const randomIndex = Math.floor(Math.random() * colors.length);
-    if(randomIndex===index) return getRandomColor(colors);
+    if (randomIndex === index) return getRandomColor(colors);
     return randomIndex;
   }
 
   return (
-    <Container onMouseOver={()=>setIndex(getRandomColor(colors))} colorsArray={colors} index={index}>
+    <Container
+      onMouseOver={() => setIndex(getRandomColor(colors))}
+      colorsArray={colors}
+      index={index}
+    >
       <Cover src={"/cover.webp"} />
       <Title>Ministério ao</Title>
       <Description>
@@ -49,10 +52,10 @@ const Project: React.FC = () => {
           }}
         >
           <GitHub>
-            <FaGithubAlt size={22} />
+            <FaGithubAlt size={18} />
           </GitHub>
           <Link>
-            <ArrowSquareOut size={22} weight="fill" />
+            <ArrowSquareOut size={18} weight="fill" />
           </Link>
         </div>
       </Footer>

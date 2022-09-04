@@ -33,6 +33,13 @@
   flex-direction: column;
   gap: 1rem;
 }
+.columnChild span{
+ cursor: pointer;
+}
+.columnChild span:hover{
+  text-decoration: underline;
+  color: blue;
+ }
 
 .title{
   color: #8a8a8a;
