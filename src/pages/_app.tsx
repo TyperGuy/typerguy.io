@@ -1,16 +1,29 @@
+import { PropsWithChildren,useState,useEffect } from 'react';
 import '../assets/styles/style.global.scss';
 import type { AppProps } from 'next/app';
-import { PropsWithChildren } from 'react';
 import Footer from 'components/footer';
 import Modal from '../components/modals/location';
+import Loader from '../components/loaders/lottie/';
+
 
 interface CustomProps extends AppProps {
   pageProps: PropsWithChildren<unknown>;
 }
 
 function MyApp({ Component, pageProps }: CustomProps) {
+  const [isLoading,setIsLoading] =useState(true);
+  useEffect(() =>{
+
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000)
+
+  },[])
   return (
-    <div
+    <>{
+      isLoading?
+      <Loader/>:
+      <div
       style={{
         width: '100%',
         display: 'flex',
@@ -23,7 +36,7 @@ function MyApp({ Component, pageProps }: CustomProps) {
        <Footer/>
        <Modal />
     </div>
-
+      }</>
   )
 
 }

@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled,{keyframes} from "styled-components";
+
 
 export const Container = styled.div<{index:number,colorsArray :string[]}>`
   width: 120px;
@@ -21,6 +22,11 @@ export const Image = styled.img`
   height:70px;
 `;
 
+const Fade = keyframes`
+ 0% {opacity:0 }
+ 100% { opacity:1}
+`
+
 export const Description = styled.div`
   position: absolute;
   display: flex;
@@ -31,15 +37,21 @@ export const Description = styled.div`
   z-index: 100;
   top: 110px;
   border-radius: 8px;
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  background-color: #e6ecf8;
+  color:#4361ee;
+  box-shadow: rgba(67, 97, 238, .2) 0px 14px 28px, rgba(67, 97, 238, .2) 0px 10px 10px;
+  animation: ${Fade} .5s;
+  -webkit-animation: ${Fade} .5s;
+  -moz-animation: ${Fade} .5s;
+  -o-animation: ${Fade} .5s;
+  -ms-animation: ${Fade} .5s;
 `;
 
 export const Arrow = styled.div`
   width: 20px;
   height: 20px;
   margin-top: -5px;
-  background-color: #fff;
+  background-color: #e6ecf8;
   transform: rotate(45deg);
 `;
 
