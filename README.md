@@ -9,7 +9,8 @@
 
 ### 📚 Libraries & frameworks
 
-- React.JS
+- ReactJS
+- Nextjs
 - Styled-Components
 - Lottie-React
 
