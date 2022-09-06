@@ -17,3 +17,4 @@
 - Lottie-React
 - SASS
 - GraphQl
+- GraphCMS
