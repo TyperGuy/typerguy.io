@@ -1,4 +1,4 @@
-# My Portfolio ( <a href="typerguy-io.vercel.app" target="_blank"> Clique para ver 👆 </a>)
+# My Portfolio ( <a href="https://typerguy-io.vercel.app/)" target="_blank"> Clique para ver 👆 </a>)
 <img src="./cover.png"/>
 
 ## My implementation 
