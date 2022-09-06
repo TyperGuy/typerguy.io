@@ -16,3 +16,4 @@
 - Styled-Components
 - Lottie-React
 - SASS
+- GraphQl
