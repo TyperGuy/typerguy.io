@@ -1,4 +1,4 @@
-<img scr="cover.png"/>
+<img scr="./cover.png"/>
 
 ### Expected behavior
 
