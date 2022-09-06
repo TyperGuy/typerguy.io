@@ -8,12 +8,12 @@
 ## Description
 <p> This is my personal portfolio. This project Was made to share all my profissional information </p>
 
-### 💻 Programming Languages
+## 💻 Programming Languages
 
 - Typescript
 
 
-### 📚 Libraries & frameworks
+## 📚 Libraries & frameworks
 
 - ReactJS
 - Nextjs
@@ -23,7 +23,7 @@
 - GraphQl
 - GraphCMS
 
-## Roadmap
+## 🗺️ Roadmap
 
 - [x] Add Changelog
 - [x] Add back to top links
