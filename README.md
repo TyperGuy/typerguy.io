@@ -1,23 +1,5 @@
 <img src="./cover.png"/>
 
-
-
--   [ ] View the optimal layout for the site depending on their device's screen size
--   [ ] See hover states for all interactive elements on the page
--   [ ] Switch between viewing Daily, Weekly, and Monthly stats
--   [ ] The text for the previous period's time should change based on the active timeframe. For Daily, it should read "Yesterday" e.g "Yesterday - 2hrs". For Weekly, it should read "Last Week," e.g. "Last Week - 32hrs". It should read "Last Month" for monthly, e.g., "Last Month - 19hrs".
-
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
-
-### Evaluation Criteria
-
--   **TypeScript** best practices
--   Show us your work through your commit history
--   Completeness: did you complete the features?
--   Correctness: does the functionality act in sensible, thought-out ways?
--   Maintainability: is it written in a clean, maintainable way?
--   Testing: is the system adequately tested?
-
 ## My implementation 
 
 ### 💻 Programming Languages
