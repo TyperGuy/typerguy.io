@@ -13,6 +13,7 @@
 - Nextjs
 - Styled-Components
 - Lottie-React
+- SASS
 
 ### 🧠 What is supost to be done
 
