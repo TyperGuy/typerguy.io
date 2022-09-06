@@ -1,5 +1,5 @@
 # Time Tracking Chalenge
-<img src = "./cover.jpg"/>
+<img src = "./cover.png"/>
 
 
 
