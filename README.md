@@ -1,17 +1,4 @@
-# Time Tracking Chalenge
-<img src = "./cover.png"/>
 
-
-
-### Objective
-
-In this challenge, your task is to retrieve data from an external API and render it like the provided designs. Use TypeScript and React.
-
-### Brief
-
-Your challenge is to build out this personal time-tracking dashboard. A perfect opportunity to flex your CSS Grid muscles! Your task is to build the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding`, and `margin`. You will find all the required assets in the `/images` folder. The assets are already optimized. Fetch data from the following endpoint:
-
-    https://wookie.codesubmit.io/time-tracking
 
 ### Expected behavior
 
