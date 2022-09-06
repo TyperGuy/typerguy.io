@@ -34,4 +34,4 @@
     - [ ] Tablet
     - [ ] Mobile
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/TyperGuy/typerguy.io/issues) for a full list of proposed features (and known issues).
