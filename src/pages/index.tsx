@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import React from "react";
-import FloatingButton from "components/landing-page-float-buttons";
+import FloatingButton from "components/widgets/landing-page-float-buttons";
 import Calltoaction from "../views/calltoaction/";
 import Body from "../views/content-body";
 import Stats from "components/banner";

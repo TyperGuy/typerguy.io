@@ -45,7 +45,6 @@ export const FloatingButton: FC = () => {
             <Schedule>
               <div style={{fontWeight:600,fontSize:'1.1em'}}>Schedule a conversation</div>
               <div style={{display:'flex', alignItems:'center', gap:5}}>
-                <img style={{height:60, alignSelf:'start'}} src='/profile.svg'/>
                 <div>
                   <span style={{marginLeft:4, fontSize:'1em', color:'rgba(0,0,0,.5)'}}>I'm open to meet</span>
                   <div style={{display:'flex',alignItems:'center',gap:5}}>
@@ -74,12 +73,9 @@ export const FloatingButton: FC = () => {
                           transition: 'all .5s ease-in-out'
                         }}/>
                       </Row>
-                      {
-                        (isSpanded===fqa.id)&&
-                        <Answer>
+                        <Answer isOpen={isSpanded===fqa.id}>
                          {fqa.answer}
                         </Answer>
-                      }
                    </Question>
                     )
                   })

@@ -12,6 +12,8 @@ export const TurnBig = keyframes`
 `;
 
 
+
+
 export const SlideUp = keyframes`
  0%{
 
@@ -170,9 +172,11 @@ export const Row = styled.div`
   border: none;
   cursor: pointer;
 `;
-export const Answer = styled.div`
+export const Answer = styled.div<{isOpen: boolean}>`
   width: 90%;
-  height: 50px;
+  height: ${(props)=>props.isOpen ? '50px':0};
+  transition: all .5s ease-in-out;
+  overflow: hidden;
   border-left: 2px solid rgba(0,0,0,.5);
   color: rgba(0,0,0,.5);
   padding-left: 5px;
