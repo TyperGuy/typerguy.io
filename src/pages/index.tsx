@@ -11,7 +11,6 @@ const Home: NextPage = () => {
       id="float"
       style={{
         maxWidth: "100vw",
-        backgroundColor: "green",
         display: "flex",
         height: "auto",
         flexDirection: "column",

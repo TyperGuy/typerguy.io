@@ -11,7 +11,6 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     justify-content: space-between;
-    background-color:red;
 
   @media only screen and (min-width: 768px ) {
     max-width: 1128px;
