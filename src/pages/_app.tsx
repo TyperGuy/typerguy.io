@@ -25,16 +25,12 @@ function MyApp({ Component, pageProps }: CustomProps) {
       <Loader/>:
       <div
       style={{
-        width: '100%',
-        display: 'flex',
-        flexDirection :'column',
-        justifyContent: 'center',
         position: 'relative',
         backgroundColor: '#fff'
         }}>
        <Component {...pageProps} />
-       <Footer/>
-       <Modal />
+       {/*<Footer/>
+       <Modal />*/}
     </div>
       }</>
   )

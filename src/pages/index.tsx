@@ -10,6 +10,8 @@ const Home: NextPage = () => {
     <div
       id="float"
       style={{
+        maxWidth: "100vw",
+        backgroundColor: "green",
         display: "flex",
         height: "auto",
         flexDirection: "column",
@@ -17,9 +19,9 @@ const Home: NextPage = () => {
       }}
     >
       <Calltoaction />
-      <Stats />
+      {/*<Stats />
       <Body />
-      <FloatingButton />
+    <FloatingButton />*/}
     </div>
   );
 };

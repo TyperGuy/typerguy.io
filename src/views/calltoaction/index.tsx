@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 import dynamic from "next/dynamic";
-import { Container, Content, Image, Circle } from "./Calltoaction.styles";
+import { Container, Content, Image, Circle,Hi, Span, H1, ButtonCotainer } from "./Calltoaction.styles";
 import Button from "../../components/button";
 import PlayButton from "../../components/button/PlayButton";
 import { PlayCircle } from "phosphor-react";
@@ -11,49 +11,22 @@ const VideoWithNoSSR = dynamic(() => import("../../components/video"), {
   ssr: false,
 });
 
-const NameStyle = {
-  fontSize: "2em",
-};
-const SloganStyle = {
-  fontSize: "2.5em",
-  color: "#6667ba",
-  marginTop: -3,
-};
 
 const Calltoaction: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpenVideo, setIsOpenVideo] = useState(false);
   return (
-    <div
-      style={{
-        width: "100%",
-        display: "grid",
-        placeItems: "center",
-      }}
-    >
       <Container>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "2rem",
-          }}
-        >
-          <div>
-            <span style={NameStyle}>Hi, my name is Rai</span>
-            <h1 style={SloganStyle}>I Build things for Mobile/Web</h1>
+         <Image src="cartoon.png" alt="Protest" />
+          <Hi>
+            <Span>Hi, my name is Rai</Span>
+            <H1>I Build things for Mobile/Web</H1>
             <Content>
               I'm mobile and frontend developer passionate about building high
               performance frontend solutions.
             </Content>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              gap: "1rem",
-              flexWrap: "wrap",
-            }}
-          >
+          </Hi>
+          <ButtonCotainer>
             <Button onClick={setIsOpen}>SEND ME AN EMAIL</Button>
             <PlayButton onClick={setIsOpenVideo}>
               <Circle>
@@ -61,9 +34,7 @@ const Calltoaction: FC = () => {
               </Circle>
               WATCH PITCH
             </PlayButton>
-          </div>
-        </div>
-        <Image src="cartoon.png" alt="Protest" />
+          </ButtonCotainer>
         <Modal setShowModal={setIsOpen} isOpen={isOpen}>
           <Form />
         </Modal>
@@ -71,7 +42,6 @@ const Calltoaction: FC = () => {
           <VideoWithNoSSR />
         </Modal>
       </Container>
-    </div>
   );
 };
 
