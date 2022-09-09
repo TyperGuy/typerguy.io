@@ -20,8 +20,7 @@ const Home: NextPage = () => {
       <Calltoaction />
       <Stats />
       <Body />
-          {/*
-    <FloatingButton />*/}
+    <FloatingButton />
     </div>
   );
 };

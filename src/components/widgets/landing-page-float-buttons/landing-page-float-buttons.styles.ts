@@ -72,7 +72,7 @@ const fadeIn = keyframes`
 `
 
 export const ContentContainer = styled.div`
-  width: 380px;
+  width: 330px;
   height: 700px;
   background-color: #fff;
   display: flex;
@@ -83,6 +83,9 @@ export const ContentContainer = styled.div`
   -webkit-animatio: ${fadeIn} .3s;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   overflow:hidden;
+  @media only screen and (min-width: 768px ) {
+    width: 380px;
+  }
 `;
 export const Header = styled.div`
   width: 100%;
