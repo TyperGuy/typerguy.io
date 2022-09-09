@@ -17,23 +17,21 @@ export const ChildContainer = styled.div`
   width: 100vw;
   display: grid;
   place-items: center;
+  padding-top: 30px;
+  padding-bottom: 60px;
   background-image: url('background-face.png');
-
-
 `;
 
 export const Stats = styled.div`
   margin: 60px 0 ;
-  width: 1128px;
-  height: 200px ;
   display: flex;
-  justify-content:flex-start;
+  flex-direction: column ;
   align-items: center;
   gap:1.5rem;
-  @media screen and (max-width: 1276px) {
-    width: 90%;
-    flex-direction: column;
-    align-items: flex-start;
+  text-align: center;
+  @media screen and (min-width: 1276px) {
+    width: 1128px;
+    flex-direction: row;
   }
 `;
 

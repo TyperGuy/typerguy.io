@@ -11,10 +11,14 @@ export const CustomButton = styled.button`
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
+  justify-content:center;
   gap: 1rem;
   cursor: pointer;
   &:hover{
     background: #223;
+  }
+  @media only screen and (min-width: 768px ) {
+    width: 250px;
   }
   `
 export const PlayButton = styled.button`
@@ -28,12 +32,17 @@ export const PlayButton = styled.button`
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
+  justify-content:center;
   gap: 1rem;
   cursor: pointer;
   position: relative;
   &:hover{
     background: #6667ab;
     color: #fff;
+  }
+
+  @media only screen and (min-width: 768px ) {
+    width: 250px;
   }
   `
 

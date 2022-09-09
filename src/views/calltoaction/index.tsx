@@ -1,6 +1,6 @@
 import { FC, useState } from "react";
 import dynamic from "next/dynamic";
-import { Container, Content, Image, Circle,Hi, Span, H1, ButtonCotainer } from "./Calltoaction.styles";
+import { Container, Content, Image, Circle,Hi, Span, H1, ButtonCotainer, ContentContainer } from "./Calltoaction.styles";
 import Button from "../../components/button";
 import PlayButton from "../../components/button/PlayButton";
 import { PlayCircle } from "phosphor-react";
@@ -18,7 +18,8 @@ const Calltoaction: FC = () => {
   return (
       <Container>
          <Image src="cartoon.png" alt="Protest" />
-          <Hi>
+         <ContentContainer>
+         <Hi>
             <Span>Hi, my name is Rai</Span>
             <H1>I Build things for Mobile/Web</H1>
             <Content>
@@ -35,6 +36,7 @@ const Calltoaction: FC = () => {
               WATCH PITCH
             </PlayButton>
           </ButtonCotainer>
+         </ContentContainer>
         <Modal setShowModal={setIsOpen} isOpen={isOpen}>
           <Form />
         </Modal>

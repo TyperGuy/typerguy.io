@@ -18,7 +18,8 @@ const Home: NextPage = () => {
       }}
     >
       <Calltoaction />
-      {/*<Stats />
+      <Stats />
+      {/*
       <Body />
     <FloatingButton />*/}
     </div>
