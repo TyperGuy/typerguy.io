@@ -5,8 +5,12 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding:20px 0;
   gap: 20px;
+  @media only screen and (min-width:776px){
+    align-items: flex-start;
+  }
 `;
 
 export const Title = styled.div`

@@ -12,8 +12,8 @@ export const Container = styled.div`
 
 `;
 export const ChildContainer = styled.div`
-  width: 1328px;
-  height: 900px ;
+  width: 90%;
+  min-height: 900px ;
   display: flex;
   border-radius: 10px;
   flex-direction: column;
@@ -24,9 +24,9 @@ export const ChildContainer = styled.div`
   box-sizing: border-box;
   background-color: #fff;
   box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
-  padding-left: 100px;
-  @media screen and (max-width: 1276px) {
-    width: 90%;
+  @media only screen and (min-width: 767px ) {
+    width: 1350px;
+    padding-left:110px ;
   }
 `;
 
@@ -36,7 +36,6 @@ export const Row = styled.div`
   width:100%;
   height: 1.1px;
   display: flex;
-  background-color: #fff;
   border-radius: 8px;
 `;
 export const Marker = styled.div<{pos:number}>`

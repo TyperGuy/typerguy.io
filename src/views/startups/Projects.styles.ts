@@ -4,9 +4,13 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   padding:20px 0;
   gap: 20px;
+  @media only screen and (min-width:776px) {
+    justify-content: flex-start;
+  }
 `;
 
 export const Title = styled.div`
@@ -40,7 +44,7 @@ export const Link = styled.a`
 
 
 export const StartupCard = styled.div`
-  width: 350px;
+  width: 320px;
   height: 236px;
   gap: 10px;
   display: flex;
