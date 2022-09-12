@@ -20,7 +20,6 @@ const Settings: React.FC<{
       <div
         style={{
           width: "80%",
-          marginTop: "10px",
           display: "flex",
           gap: 10,
           alignItems: "center",
@@ -30,19 +29,13 @@ const Settings: React.FC<{
       </div>
       <div
         style={{
-          width: "100%",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
+          width: "80%",
+          overflow: "scroll",
+          textAlign: "justify",
+          maxHeight: "300px",
         }}
       >
-        <p
-          style={{
-            width: "80%",
-            textAlign: "justify",
-          }}
-        >
-          I've been working as a freelance developer in Angola since 2016. Now
+       I've been working as a freelance developer in Angola since 2016. Now
           I'm at a stage in my career where I want to make the leap to
           international markets, and luckily I've done very well. For the sake
           of studying my international reach, I collect data such as continent
@@ -60,7 +53,7 @@ const Settings: React.FC<{
           very seriously! <br />
           <br />
           <b>Thanks!</b>
-        </p>
+
       </div>
       <div
         style={{

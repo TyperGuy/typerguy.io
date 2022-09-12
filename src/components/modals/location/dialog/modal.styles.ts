@@ -22,7 +22,7 @@ export const Container = styled.div`
 `
 
 export const Content = styled.div`
-  width: 400px;
+  width: 330px;
   height: 270px;
   background-color: #fff;
   margin: 20px;
@@ -46,7 +46,7 @@ export const Description = styled.div`
 `
 
 export const Button = styled.button`
-  width: 190px;
+  width: 150px;
   height: 50px;
   background-color: #6667ab;
   font-weight: 700;
