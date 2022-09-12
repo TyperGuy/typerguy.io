@@ -31,4 +31,8 @@
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
+.message{
+  width: 300px;
+  text-align: center;
+}
 

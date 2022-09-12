@@ -20,7 +20,7 @@ export default function Doole(){
         width={150}
       />
      </div>
-     <span>Espere um pouquinho estou a preparar tudo..</span>
+     <span className={Styles.message}>Espere um pouquinho estou a preparar tudo..</span>
    </div>
   )
 }
