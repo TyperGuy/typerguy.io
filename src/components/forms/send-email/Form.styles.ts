@@ -15,6 +15,10 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 2.5rem;
+  @media only screen and (max-width: 375px){
+    width: 350px;
+    max-height: 500px;
+  }
 `;
 
 export const Input = styled.input`
@@ -50,6 +54,9 @@ export const Textarea = styled.textarea`
     border: 2px solid #fff;
     outline-width: medium;
   }
+  @media only screen and (max-width: 375px){
+    height: 200px;
+  }
 `;
 export const Button = styled.button`
   height: 55px;
@@ -74,6 +81,10 @@ export const Button = styled.button`
 `
 
 
-
+export const Message = styled.div`
+    @media only screen and (max-width: 375px){
+    display: none;
+  }
+  `
 
 

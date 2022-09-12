@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { Container, Input, Textarea, Button } from "./Form.styles";
-import { ButtonType } from "myButton";
+import React, { useState,useEffect } from "react";
+import { Container, Input, Textarea, Button, Message } from "./Form.styles";
 
 const Form: React.FC = () => {
   const [chars, setChars] = useState(0);
@@ -9,13 +8,14 @@ const Form: React.FC = () => {
     else console.log("está lá");
   };
 
+
   return (
     <Container>
       <h2 style={{ alignSelf: "start" }}> Send me an Email</h2>
-      <div>
+      <Message>
         Hey, i hope you are good. For me will be a pleasure to receive an email
         from you. Please tell me waht is in your mind 😍
-      </div>
+      </Message>
       <form
         style={{
           display: "flex",
