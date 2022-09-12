@@ -29,8 +29,8 @@ function MyApp({ Component, pageProps }: CustomProps) {
         backgroundColor: '#fff'
         }}>
        <Component {...pageProps} />
-       {/*<Footer/>
-       <Modal />*/}
+       <Footer/>
+       <Modal />
     </div>
       }</>
   )
