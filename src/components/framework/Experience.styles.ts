@@ -1,7 +1,7 @@
 import styled,{keyframes} from "styled-components";
 
 
-export const Container = styled.div<{index:number,colorsArray :string[]}>`
+export const Container = styled.div`
   width: 120px;
   height: 120px;
   box-sizing: border-box;
@@ -12,7 +12,7 @@ export const Container = styled.div<{index:number,colorsArray :string[]}>`
   position: relative;
   box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
   &:hover{
-     outline:2px solid ${props=>props.colorsArray[props.index]};
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
   }
 
 `;

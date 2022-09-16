@@ -39,8 +39,6 @@ const Project: React.FC<TechPropsType> = ({ techKey, icon, inf }) => {
         setIsHover(true);
       }}
       onMouseLeave={() => setIsHover(false)}
-      colorsArray={colors}
-      index={index}
     >
       <Image src={icon} alt={techKey} />
       {isHover && (

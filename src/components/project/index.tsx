@@ -16,8 +16,7 @@ import { FaGithubAlt } from "react-icons/fa";
 const Project: React.FC = () => {
 
   return (
-    <Container
-    >
+    <Container>
       <Cover src={"/cover.webp"} />
       <Title>Ministério ao</Title>
       <Description>
