@@ -34,9 +34,6 @@ const Project: React.FC = () => {
 
   return (
     <Container
-      onMouseOver={() => setIndex(getRandomColor(colors))}
-      colorsArray={colors}
-      index={index}
     >
       <Cover src={"/cover.webp"} />
       <Title>Ministério ao</Title>
