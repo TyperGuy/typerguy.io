@@ -28,7 +28,7 @@ export const Input = styled.input`
   padding: 1.6rem 1rem;
   transition: all 0.2s ease-in;
   height: 45px;
-  border: 2px solid #222;
+  border: 2px solid #d9d9d9;
   background-color: #d9d9d9;
   transition: all 0.2s ease-in;
   font-size:1rem;
@@ -36,6 +36,7 @@ export const Input = styled.input`
     outline-style: solid;
     border: 2px solid #fff;
     outline-width: medium;
+    outline-color: #6667cb;
   }
 `;
 export const Textarea = styled.textarea`
@@ -43,7 +44,7 @@ export const Textarea = styled.textarea`
   height: 320px;
   box-sizing: border-box;
   border-radius: 4px;
-  border: 2px solid #222;
+  border: 2px solid #d9d9d9;
   background-color: #d9d9d9;
   padding: 1rem;
   transition: all 0.2s ease-in;
@@ -53,6 +54,7 @@ export const Textarea = styled.textarea`
     outline-style: solid;
     border: 2px solid #fff;
     outline-width: medium;
+    outline-color: #6667cb;
   }
   @media only screen and (max-width: 375px){
     height: 200px;

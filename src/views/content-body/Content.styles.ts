@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: grid;
   place-items: center;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #fafafa;
   position: relative;
   height: 1000px;
 
@@ -23,7 +23,9 @@ export const ChildContainer = styled.div`
   top: -100px;
   box-sizing: border-box;
   background-color: #fff;
-  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+  border: 1px solid  #e6ecf8;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  ///box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
   @media only screen and (min-width: 767px ) {
     width: 1350px;
     padding-left:110px ;

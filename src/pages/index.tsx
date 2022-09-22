@@ -15,6 +15,7 @@ const Home: NextPage = () => {
         height: "auto",
         flexDirection: "column",
         alignItems: "center",
+        backgroundColor:'#fff'
       }}
     >
       <Calltoaction />
