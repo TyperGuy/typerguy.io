@@ -4,13 +4,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 300px;
-  height: 322px;
+  height: 200px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 1rem;
   border-radius: 8px;
-  padding: 10px;
+  padding: 1.5rem;
   overflow: hidden;
   box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
   transition: all .3s ease-in-out;

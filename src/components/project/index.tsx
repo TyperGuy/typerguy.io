@@ -17,10 +17,10 @@ const Project: React.FC = () => {
 
   return (
     <Container>
-      <Cover src={"/cover.webp"} />
       <Title>Ministério ao</Title>
       <Description>
         An all-in-one starter kit for high-performance e-commerce sites.
+        starter.
       </Description>
       <Footer>
         <div
