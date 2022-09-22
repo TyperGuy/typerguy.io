@@ -54,7 +54,7 @@ export const Circle = styled.div`
   align-self:flex-end;
   place-items: center;
   border-radius: 50%;
-  background-color: #6667ab;
+  background-image: -webkit-linear-gradient(139deg,#f15f,#f15f79);
   color: #fff;
   margin: 3px;
   cursor: pointer;
@@ -114,7 +114,10 @@ export const Schedule = styled.div`
   box-sizing: border-box;
   background-color: #fff;
   border-radius: 3px;
-  border-top: solid 2px #6667ab;
+  border-width: 2px 0 0;
+  border-top-style: solid;
+  -webkit-border-image:  linear-gradient(139deg,#f15f,#f15f79) 3;
+  border-image:  linear-gradient(139deg,#f15f,#f15f79) 3;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: flex;
   flex-direction: column;
@@ -129,7 +132,10 @@ export const FQA = styled.div`
   box-sizing: border-box;
   background-color: #fff;
   border-radius: 3px;
-  border-top: solid 2px #6667ab;
+  border-width: 2px 0 0;
+  border-top-style: solid;
+  -webkit-border-image:  linear-gradient(139deg,#f15f,#f15f79) 3;
+  border-image:  linear-gradient(139deg,#f15f,#f15f79) 3;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   display: flex;
   flex-direction: column;
@@ -143,7 +149,7 @@ export const FQA = styled.div`
 export const ScheduleBtn = styled.button`
   width: 200px;
   height: 40px;
-  background-color: #6667ab;
+  background-image: -webkit-linear-gradient(139deg,#222,#223);
   color: #fff;
   font-size: .9em;
   display: flex;
@@ -152,9 +158,9 @@ export const ScheduleBtn = styled.button`
   border-radius: 50px;
   border: none;
   cursor: pointer;
-  transition: all .3s ease-in-out;
+  transition: all .5s ease-in-out;
   &:hover{
-    background-color: #222;
+    background-image: -webkit-linear-gradient(139deg,#f15f,#f15f79);
   }
 `;
 

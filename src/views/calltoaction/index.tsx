@@ -35,7 +35,7 @@ const Calltoaction: FC = () => {
             <H1>I Build things for Mobile/Web</H1>
             <Content>
               I'm mobile and frontend developer passionate about building high
-              performance frontend solutions.
+              performance frontend and mobile solutions.
             </Content>
           </Hi>
           <ButtonCotainer>
