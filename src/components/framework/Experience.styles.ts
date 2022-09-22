@@ -13,6 +13,7 @@ export const Container = styled.div`
   box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
   &:hover{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    margin-top: -4px;
   }
 
 `;
