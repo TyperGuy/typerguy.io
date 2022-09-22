@@ -2,7 +2,7 @@
 
 
 
-# My Portfolio ( <a href="https://typerguy-io.vercel.app/)" target="_blank"> Clique para ver 👆 </a>)
+# My Portfolio ( <a href="https://typerguy-io.vercel.app/)" target="_blank"> Click to see 👆 </a>)
 <img src="./cover.png"/>
 
 ## Description
@@ -30,9 +30,9 @@
 - [x] Add Links to my social Networks
 - [ ] Add my Video Pitch
 - [ ] Implement Dowload Resume in multiples formats
-- [ ] Implement Multiple Devices Support
-    - [ ] Tablet
-    - [ ] Mobile
+- [x] Implement Multiple Devices Support
+    - [x] Tablet
+    - [x] Mobile
 
 See the [open issues](https://github.com/TyperGuy/typerguy.io/issues) for a full list of proposed features (and known issues).
 
