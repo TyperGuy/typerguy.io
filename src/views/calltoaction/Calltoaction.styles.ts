@@ -89,10 +89,19 @@ export const Pulse = keyframes`
 		box-shadow: 0 0 40px 10px rgba(255, 206, 67, 0);
 	}
 `;
+const fadeIn = keyframes`
+  0%{
+   opacity: 0;
+  }
+  100%{
+  opacity: 1;
+  }
+`
 
 export const Image = styled.img`
   height: 150px;
   border-radius: 8px;
+  animation: ${fadeIn} 2s;
   @media only screen and (min-width: 768px ) {
     height: 300px ;
   }

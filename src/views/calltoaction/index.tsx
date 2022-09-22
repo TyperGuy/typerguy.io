@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useState,useEffect } from "react";
 import dynamic from "next/dynamic";
 import { Container, Content, Image, Circle,Hi, Span, H1, ButtonCotainer, ContentContainer } from "./Calltoaction.styles";
 import Button from "../../components/button";
@@ -6,6 +6,7 @@ import PlayButton from "../../components/button/PlayButton";
 import { PlayCircle } from "phosphor-react";
 import Modal from "../../components/modals/generic";
 import Form from "components/forms/send-email";
+import CircleLoader from '../../components/loaders/skeleton/Circle-Image';
 
 const VideoWithNoSSR = dynamic(() => import("../../components/video"), {
   ssr: false,
@@ -14,10 +15,20 @@ const VideoWithNoSSR = dynamic(() => import("../../components/video"), {
 
 const Calltoaction: FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [loading,setLoading] = useState(true);
   const [isOpenVideo, setIsOpenVideo] = useState(false);
+
+  useEffect(()=>{
+    setTimeout(() => {
+      setLoading(false)
+    }, 5000);
+  },[])
   return (
       <Container>
-         <Image src="cartoon.png" alt="Protest" />
+        {loading?
+          <CircleLoader/>:
+          <Image src="cartoon.png" alt="Protest" />
+        }
          <ContentContainer>
          <Hi>
             <Span>Hi, my name is Rai</Span>
