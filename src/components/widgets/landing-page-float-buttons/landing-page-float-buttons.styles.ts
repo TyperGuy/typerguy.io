@@ -15,12 +15,32 @@ export const TurnBig = keyframes`
 
 
 export const SlideUp = keyframes`
- 0%{
-
- }
- 100%{
-
- }
+  0%{
+    transform: scale(0,0);
+  }
+  25%{
+    transform: scale(0,0);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+`;
+export const SlideUp1 = keyframes`
+  0%{
+    transform: scale(0,0);
+  }
+  25%{
+    transform: scale(0,0);
+  }
+  50%{
+    transform: scale(0,0);
+  }
+  75%{
+    transform: scale(0,0);
+  }
+  100%{
+    transform: scale(1,1);
+  }
 `;
 
 const FadeIn = keyframes`
@@ -124,7 +144,7 @@ export const Schedule = styled.div`
   justify-content: center;
   padding-left: 16px;
   gap: 16px;
-  animation: ${FadeIn} 1s;
+  animation: ${SlideUp} 2s;
 `;
 export const FQA = styled.div`
   width: 100%;
@@ -142,7 +162,7 @@ export const FQA = styled.div`
   justify-content: center;
   padding-left: 16px;
   gap: 16px;
-  animation: ${FadeIn} 1s;
+  animation: ${SlideUp1} 2s;
 `;
 
 

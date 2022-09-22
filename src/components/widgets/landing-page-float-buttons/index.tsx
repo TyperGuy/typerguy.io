@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useState,useEffect } from 'react';
 import { Container ,Circle, ContentContainer, Header, Body, Title, Schedule,ScheduleBtn, FQA, Question, Row, Answer, Div} from './landing-page-float-buttons.styles'
 import {CalendarCheck, Clock, DotsThreeOutline,X} from 'phosphor-react';
 import {BsChevronDown as Arrow} from 'react-icons/bs';
@@ -24,10 +24,6 @@ const Questions = [
 ]
 
 export const FloatingButton: FC = () => {
-  const sendToTop = () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
 
   const [isOpen,setIsOpen] = useState(false);
   const [isSpanded,setIsSpanded] = useState(1);
@@ -43,21 +39,21 @@ export const FloatingButton: FC = () => {
               <div style={{color:'#fff',opacity:.5}}>Ask me anything, or send your feedback</div>
             </Div>
             <Schedule>
-              <div style={{fontWeight:600,fontSize:'1.1em'}}>Schedule a conversation</div>
-              <div style={{display:'flex', alignItems:'center', gap:5}}>
-                <div>
-                  <span style={{marginLeft:4, fontSize:'1em', color:'rgba(0,0,0,.5)'}}>I'm open to meet</span>
-                  <div style={{display:'flex',alignItems:'center',gap:5}}>
-                    <Clock style={{color:'blue'}} size={20} weight="light" />
-                     Monday, 19:00,GMT+1
-                  </div>
+            <div style={{fontWeight:600,fontSize:'1.1em'}}>Schedule a conversation</div>
+            <div style={{display:'flex', alignItems:'center', gap:5}}>
+              <div>
+                <span style={{marginLeft:4, fontSize:'1em', color:'rgba(0,0,0,.5)'}}>I'm open to meet</span>
+                <div style={{display:'flex',alignItems:'center',gap:5}}>
+                  <Clock style={{color:'blue'}} size={20} weight="light" />
+                   Monday, 19:00,GMT+1
                 </div>
               </div>
-              <ScheduleBtn>
-                <CalendarCheck size={20} weight="fill"/>
-                SCHEDULE MEETING
-              </ScheduleBtn>
-            </Schedule>
+            </div>
+            <ScheduleBtn>
+              <CalendarCheck size={20} weight="fill"/>
+              SCHEDULE MEETING
+            </ScheduleBtn>
+          </Schedule>
             <FQA>
               <div style={{fontWeight:600,fontSize:'1.1em'}}>Most Asked Questions</div>
               <div>
