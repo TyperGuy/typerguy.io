@@ -16,7 +16,7 @@ export const Container = styled.div`
   transition: all .3s ease-in-out;
   &:hover{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
-    margin-top: -4px ;
+    margin-top: -4px;
   }
 
 `;

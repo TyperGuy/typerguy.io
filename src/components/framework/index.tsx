@@ -1,5 +1,5 @@
-import { Container, Image, Description, Arrow } from "./Experience.styles";
-import Data from "../../data/techs.json";
+import { Container, Image} from "./Experience.styles";
+import { AiOutlineArrowRight as Arrow } from "react-icons/ai";
 import { useState } from "react";
 
 interface TechPropsType {
@@ -24,11 +24,10 @@ const Project: React.FC<TechPropsType> = ({ techKey, icon, inf }) => {
       onMouseLeave={() => setIsHover(false)}
     >
       <Image src={icon} alt={techKey} />
+
+      <span>{inf.name}</span>
       {isHover && (
-        <Description>
           <Arrow />
-          <span>{inf.name}</span>
-        </Description>
       )}
     </Container>
   );
