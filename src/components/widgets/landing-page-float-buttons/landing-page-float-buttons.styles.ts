@@ -21,7 +21,7 @@ export const SlideUp = keyframes`
   25%{
     transform: scale(0,0);
   }
-  100%{
+  50%{
     transform: scale(1,1);
   }
 `;
@@ -36,9 +36,6 @@ export const SlideUp1 = keyframes`
     transform: scale(0,0);
   }
   75%{
-    transform: scale(0,0);
-  }
-  100%{
     transform: scale(1,1);
   }
 `;
