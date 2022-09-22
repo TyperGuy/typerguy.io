@@ -1,7 +1,10 @@
 .container {
   width: 100%;
   padding: 20px 0;
-  border-top: 2px solid #222;
+  border-width: 2px 0 0;
+  border-top-style: solid;
+  -o-border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
+  border-image: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff) 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
