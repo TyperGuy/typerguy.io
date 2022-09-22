@@ -2,7 +2,7 @@
 
 
 
-# My Portfolio ( <a href="https://typerguy-io.vercel.app/)" target="_blank"> Clique para ver 👆 </a>)
+# My Portfolio ( <a href="https://typerguy-io.vercel.app/)" target="_blank"> Click to see 👆 </a>)
 <img src="./cover.png"/>
 
 ## Description
