@@ -26,7 +26,6 @@ export const Container = styled.div`
 
 
 export const ContentContainer = styled.div`
-
   border-radius: 6px;
   background-color: #fff;
   display: flex ;

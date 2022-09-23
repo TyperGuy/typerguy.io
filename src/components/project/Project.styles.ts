@@ -1,6 +1,34 @@
-import styled from "styled-components";
+import styled,{keyframes} from "styled-components";
 
 
+const fadeIn = keyframes`
+
+0%{
+  opacity: 0;
+}
+10%{
+  opacity: 0;
+}
+20%{
+  opacity: 0;
+}
+30%{
+  opacity: 0;
+}
+40%{
+  opacity: .4;
+}
+50%{
+  opacity: .5;
+}
+60%{
+  opacity: .75;
+}
+100%{
+  opacity: 1;
+}
+
+`
 
 export const Container = styled.div`
   width: 300px;
@@ -14,6 +42,7 @@ export const Container = styled.div`
   overflow: hidden;
   box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
   transition: all .3s ease-in-out;
+  animation: ${fadeIn} 1s ;
   &:hover{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
     margin-top: -4px;

@@ -1,19 +1,18 @@
+import { useState } from "react";
 import { ArrowSquareOut } from "phosphor-react";
 import {
   Container,
-  Cover,
   Description,
-  Flex,
   Footer,
   GitHub,
   Link,
   Title,
 } from "./Project.styles";
+import Loader from '../loaders/skeleton/Card';
 import { FaGithubAlt } from "react-icons/fa";
 
-
-
 const Project: React.FC = () => {
+  const [isLoading,setIsLoading] = useState(true);
 
   return (
     <Container>
@@ -43,3 +42,5 @@ const Project: React.FC = () => {
 };
 
 export default Project;
+
+
