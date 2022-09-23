@@ -1,6 +1,18 @@
-import styled from "styled-components";
+import styled,{keyframes} from "styled-components";
 
 // Styled component named StyledButton
+
+const slowFade = keyframes`
+  from{
+    opacity:.9;
+    transform:translateY(30px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+`
 export const Container = styled.div`
   width: 100%;
   display: grid;
@@ -9,7 +21,6 @@ export const Container = styled.div`
   background-color: #fafafa;
   position: relative;
   height: 1000px;
-
 `;
 export const ChildContainer = styled.div`
   width: 90%;
@@ -26,6 +37,7 @@ export const ChildContainer = styled.div`
   border: 1px solid  #e6ecf8;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   ///box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+  animation: ${slowFade} .8s;
   @media only screen and (min-width: 767px ) {
     width: 1350px;
     padding-left:110px ;
