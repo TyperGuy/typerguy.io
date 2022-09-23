@@ -16,7 +16,6 @@ const Modal: FC = () => {
 
  if(showModal)
   return (
-    <Container>
       <ChildContainer>
       {
         (targetModal===typeModal.ask) &&
@@ -31,7 +30,6 @@ const Modal: FC = () => {
         <Settings setShowModal={setShowModal} setTargetModal={setTargetModal}/>
       }
       </ChildContainer>
-    </Container>
   )
 
   return null
