@@ -4,6 +4,7 @@ import FloatingButton from "components/widgets/landing-page-float-buttons";
 import Calltoaction from "../views/calltoaction/";
 import Body from "../views/content-body";
 import Stats from "components/banner";
+import NewsLatter from "../components/newslatter"
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
       <Calltoaction />
       <Stats />
       <Body />
+      <NewsLatter/>
       <FloatingButton />
     </div>
   );
