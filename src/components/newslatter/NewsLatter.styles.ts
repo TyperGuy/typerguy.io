@@ -25,47 +25,93 @@ export const Container = styled.div`
 
 
 export const ContentContainer = styled.div`
-  width: 1200px;
+  width: 1350px;
   height: 200px;
   background-image: -webkit-linear-gradient(139deg,#f15f,#f15f79);
+  border: 1px solid #e6ecf8;
+  box-shadow: rgba(0,0,0,0.1) 0px 20px 25px -5px,rgba(0,0,0,0.04) 0px 10px 10px -5px;
   margin-bottom: 100px;
   border-radius: 8px;
+  color: #fff;
 `
 export const Content = styled.div`
-width:100% ;
-height: 100%;
- background-image: url('background-face.png');
+  width:100% ;
+  height: 100%;
+  background-image: url('background-face.png');
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 `
 
-export const Row = styled.div`
-  width: 100%;
-  height: 4px;
-  border-radius:8px 8px 0 0;
-`
-export const CloseBtn = styled.button`
-  width: 25px;
-  height: 25px;
-  border-radius:50%;
-  background-color: #eee;
-  border: none;
+export const TextContainer = styled.div`
+  max-width: 550px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: flex-end;
-  margin:10px;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 100px;
+  span{
+    max-width: 350px;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: normal;
+    color: #fff;
+  }
+`
+
+export const ButtonCotainer = styled.div`
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-right: 100px;
+  span{
+    max-width: 350px;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: normal;
+    color: #fff;
+  }
+`
+export const Input = styled.input`
+  width:100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 1.6rem 1rem;
+  transition: all 0.2s ease-in;
+  height: 45px;
+  border: 2px solid #d9d9d9;
+  background-color: #d9d9d9;
+  transition: all 0.2s ease-in;
+  font-size:1rem;
+  &:focus{
+    outline-style: solid;
+    border: 2px solid #f15f;
+    outline-width: medium;
+    outline-color: #6667cb;
+  }
+`;
+
+export const Button = styled.button`
+  height: 55px;
+  width: 100%;
+  background:#222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.05s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 0 1.5rem;
   cursor: pointer;
-  color: #666;
-  transition: all 0.3s ease-in-out;
   &:hover{
-    color: #F34747;
-    background-color:rgba(255,0,0,.1);
+    background:#6667cb;
   }
   &:focus{
-    color: #F34747;
-    background-color:rgba(255,0,0,.1);
     outline-style:solid;
-    outline-color:#222;
-    border: 2px solid #fff;
+    outline-color: #6667cb;
+    border: 2px solid #f15f;
     outline-width: medium;;
   }
 `
