@@ -20,6 +20,9 @@ export const Container = styled.div`
   justify-content: center ;
   margin-top: -100px;
   padding: 20px 0;
+  @media only screen and (max-width: 375px){
+    margin-top:0;
+  }
 `
 
 
@@ -33,6 +36,10 @@ export const ContentContainer = styled.div`
   margin-bottom: 100px;
   border-radius: 8px;
   color: #fff;
+  @media only screen and (max-width: 375px){
+    width: 90%;
+    height: 400px ;
+  }
 `
 export const Content = styled.div`
   width:100% ;
@@ -41,7 +48,11 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  @media only screen and (max-width: 375px){
+    flex-direction: column;
+    justify-content:center;
+    gap: 3rem;
+  }
 `
 
 export const TextContainer = styled.div`
@@ -58,6 +69,16 @@ export const TextContainer = styled.div`
     letter-spacing: normal;
     color: #fff;
   }
+  @media only screen and (max-width: 375px){
+    width: 90% ;
+    margin-left: 10px;
+    gap: 1rem;
+    span{
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.26;
+    }
+  }
 `
 
 export const ButtonCotainer = styled.div`
@@ -66,13 +87,14 @@ export const ButtonCotainer = styled.div`
   flex-direction: column;
   gap: 1rem;
   margin-right: 100px;
-  span{
-    max-width: 350px;
-    font-size: 27px;
+  @media only screen and (max-width: 375px){
+    width: 90% ;
+    margin-right: 0;
+    gap: 1rem;
+    span{
+    font-size: 17px;
     font-weight: 700;
     line-height: 1.26;
-    letter-spacing: normal;
-    color: #fff;
   }
 `
 export const Input = styled.input`
