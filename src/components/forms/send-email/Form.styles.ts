@@ -5,16 +5,13 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   box-sizing: border-box;
-  width: 550px;
-  height: 700px;
-  margin: 2rem 0;
+  width: 100%;
   background-color: #fff;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 2.5rem;
   @media only screen and (max-width: 375px){
     width: 350px;
     max-height: 500px;

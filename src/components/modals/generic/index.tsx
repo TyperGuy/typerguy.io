@@ -20,14 +20,14 @@ const typeModal = {
   information: "infModal",
 };
 const Modal: FC<{
+  title: string;
   isOpen: boolean;
   setShowModal: (isOpen: boolean) => void;
-}> = ({ children, isOpen, setShowModal }) => {
+}> = ({ children, title, isOpen, setShowModal }) => {
   if (isOpen)
     return (
       <Container>
         <Child>
-          <Row />
           <Header>
             <h3> Send me an Email</h3>
             <CloseBtn onClick={() => setShowModal(false)}>

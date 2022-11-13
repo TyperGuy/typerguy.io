@@ -21,11 +21,13 @@ export const Container = styled.div`
   background-color: rgba(1,1,1 ,.2);
   display:grid;
   place-items: center;
+  
 `
 
 
 
 export const ContentContainer = styled.div`
+ max-width: 500px;
   border-radius: 6px;
   background-color: #fff;
   display: flex ;
@@ -34,6 +36,8 @@ export const ContentContainer = styled.div`
   animation-name:${slowFade};
   animation-duration: .3s;
   padding: 20px;
+  gap: 40px;
+  border-top: 5px solid #f15f;
 `
 export const Header = styled.div`
 height: 30px;
