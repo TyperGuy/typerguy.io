@@ -33,11 +33,13 @@ export const ContentContainer = styled.div`
   box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
   animation-name:${slowFade};
   animation-duration: .3s;
+  padding: 20px;
 `
 export const Header = styled.div`
+height: 30px;
   display: flex;
   align-items: center;
-  flex-direction: row-reverse;
+  justify-content: space-between;
 `
 
 export const Row = styled.div`
@@ -55,7 +57,6 @@ export const CloseBtn = styled.button`
   align-items: center;
   justify-content: center;
   align-self: flex-end;
-  margin:10px;
   cursor: pointer;
   color: #666;
   transition: all 0.3s ease-in-out;
