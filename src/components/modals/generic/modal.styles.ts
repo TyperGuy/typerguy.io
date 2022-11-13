@@ -27,7 +27,7 @@ export const Container = styled.div`
 
 
 export const ContentContainer = styled.div`
- max-width: 500px;
+  max-width: 500px;
   border-radius: 6px;
   background-color: #fff;
   display: flex ;

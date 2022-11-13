@@ -29,7 +29,7 @@ const Modal: FC<{
       <Container>
         <Child>
           <Header>
-            <h3> Send me an Email</h3>
+            <h3>{title}</h3>
             <CloseBtn onClick={() => setShowModal(false)}>
               <X size={16} />
             </CloseBtn>
